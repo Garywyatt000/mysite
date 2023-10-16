@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css ">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="logoimage">
+    <img class="logo" src="images/Logo.png" alt="x">
+  </div>
+  <div class="form" id="form">
+  </div>
+  <script>
+    let phoneEl = document.getElementById('phone');
+    let emailEl = document.getElementById('email');
+    let emaildivEl = document.getElementById('emaildiv');
+
+    //switch the signup to mail registration
+    function switchtoemail() {
+      emaildivEl = document.getElementById('emaildiv');
+      phoneEl.classList.remove('orange');
+      emailEl.classList.add('orange');
+      emaildivEl.innerHTML = `
+        <div class="icondiv">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+      </div>
+      <div class="textdiv">
+        <input class="input" type="email" placeholder="example@gmail.com">
+      </div>
+        `
+    }
+
+    //switch the signup to phone registration
+    function switchtophone() {
+      phoneEl.classList.add('orange');
+      emailEl.classList.remove('orange');
+      emaildivEl.innerHTML = `
+      <div class="icondiv">
+        <i class="fa fa-mobile" aria-hidden="true"></i>
+      </div>
+      <div class="textdiv">
+        <input class="input" type="number" placeholder="+1 234 567 8910">
+      </div>
+      `
+    }
+    const formEl = document.getElementById('form');
+
+    //create the display for login
+    let loginState = true;
+    
+    function loginform() {
+      loginState = true;
+      formEl.innerHTML = `
+    <input id="user" type="text" placeholder="Please enter username" required>
+    <input id="pwd" type="password" placeholder="Please enter password" required>
+    <div>
+    <input id="checkbox" type="checkbox" label="lsremeberMe"> <label for="remberMe"> Remember password</label>
+    </div>
+    <div class="btnholder">
+    <button onclick="changelogin()" class="signupbtn" id="signup"> Sign up</button>
+    <button onclick="change()" class="loginbtn" id="login">Log in</button>
+  
+    </div>
+    `;
+      let loginEl = document.getElementById('login');
+      let signupEl = document.getElementById('signup');
+      signupEl.classList.add('activeloginbtn')
+    }
+    loginform();
+
+    //create the display for signup
+    function signupform() {
+      if(loginState) {
+        
+        loginState = false
+      formEl.innerHTML = `
+        <div class="flexdiv2">
+        <div id="phone" class="phone orange" onclick="switchtophone()">
+          Phone register
+      </div>
+      <div class="email" id="email" onclick="switchtoemail()">
+         Email register
+      </div>
+    </div>
+    <div class="flexdiv">
+      <div class="icondiv">
+        <i class="fa fa-user" aria-hidden="true"></i>
+      </div>
+      <div class="textdiv">
+        <input class="input" id="username" type="text" placeholder="Username (5-15 characters)">
+      </div>
+    </div>
+    <div class="flexdiv">
+      <div class="icondiv">
+       <i class="fa fa-lock" aria-hidden="true"></i>     
+      </div>
+      <div class="textdiv">
+        <input class="input" type="text" placeholder="Login password (6-20 characters)">
+      </div>
+    </div>
+    <div class="flexdiv" id="emaildiv" onclick="getter()">
+      <div class="icondiv">
+        <i class="fa fa-mobile" aria-hidden="true"></i>
+      </div>
+      <div class="textdiv">
+        <input class="input" type="text" placeholder="+1 234 567 8910">
+      </div>
+    </div>
+    <div class="btnholder">
+     <button onclick="change()" class="loginbtn" id="login">Log in</button>
+    <button onclick="changelogin()" class="signupbtn" id="signup">signup</button>
+    </div>
+    `
+      }
+      let loginEl = document.getElementById('login');
+      let signupEl = document.getElementById('signup');
+      loginEl.classList.add('activeloginbtn');
+      phoneEl = document.getElementById('phone');
+      emailEl = document.getElementById('email');
+    }
+
+    //changes the display to login
+    function change() {
+      loginEl = document.getElementById('login');
+      if (loginEl.onclick) {
+        login();
+        loginform();
+      }
+    }
+
+    //changes the display to signup
+    function changelogin() {
+      signupform();
+    }
+
+    const userEl = document.getElementById('user');
+    
+    //check for login validity
+    function login() {
+      if (userEl.value == "Micheal" && pwdEl.value == '123456') {
+        location.href = '/Page2.html'
+      }
+    }
+
+    const usernameEl = document.getElementById('username');
+    const luser = document.getElementById('user');
+  </script>
+</body>
+
+</html>

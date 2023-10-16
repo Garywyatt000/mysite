@@ -1,0 +1,72 @@
+body {
+  background-image: url("Images/Gift.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 70vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+
+.header {
+  padding: 1em;
+  color: white;
+  background-color: red;
+  text-align: center;
+  font-size: 0.9em;
+  display: grid;
+  grid-template-columns: 3em 1fr;
+  color: white;
+}
+
+
+
+.anchor {
+  color: black;
+  text-decoration-line: none;
+}
+
+
+.happy {
+  color: white;
+  font-size: 2.1em;
+  font-weight: 700;
+  text-align: center;
+  margin: 0.3em 0 0 0;
+}
+
+.invite {
+  color: white;
+  margin: 1.5em 0 0 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1em
+}
+
+.bg {
+  background-color: lightpink;
+  height: 70%;
+  margin: 10em 0 0 0;
+  text-align: center;
+  align-items: center;
+  padding-top: 6em;
+  
+}
+
+.pix {
+  width: 8em;
+  height: 8em;
+
+}
+
+.scan {
+  margin: auto;
+}
+
+.code {
+  font-weight: 700;
+  margin-top: 3em;
+}

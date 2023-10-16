@@ -1,0 +1,41 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+
+.header {
+  padding: 0.9em;
+  color: white;
+  background-color: red;
+  text-align: center;
+  font-size: 0.9em;
+  display: grid;
+  grid-template-columns: 3em 1fr;
+  color: white;
+}
+
+.anchor {
+  text-decoration: none;
+  color: black;
+}
+
+.rules {
+  padding: 1em 0.5em 1em 0.5em;
+  line-height: 1.5em;
+  color: dimgrey;
+}
+
+p {
+  margin-top: 1em;
+}
+
+.dear {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #404040;
+}
+
+span {
+  color: grey;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="Avatar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css ">
+</head>
+
+<body>
+  
+  <header class="header">
+    <a class="anchor" href="Page8.html">
+      <i class="fa fa-angle-left" aria-hidden="true"></i>
+    </a>
+    <div class="top">
+      Photo
+    </div>
+    <div class="anchor">
+    </div>
+    
+  </header>
+  
+  <div class="avatar">
+    <img src="Images/Avatar.jpg" alt="x">
+  </div>
+  
+  <div class="flex">
+    <button>
+      choose from photos
+    </button>
+    
+    <button>
+      Take a photo
+    </button>
+  </div>
+  <script>
+  /*
+  function checkEligibility(age) {
+    if (age>=18) {
+      console.log('You\'re eligible')
+    }else if (age<18) {
+      console.log("You're not eligible")
+    }
+  }
+  
+  function check(age) {
+    (age<=0)?console.log("Age can't be negative"):(age<6)?console.log("You're a baby"): (age < 12)?console.log("You're a little grown"):(age<20)?console.log("You're a teenager"):console.log("You're an adult")
+  }
+  
+  checkEligibility(19);
+  check(17);
+  check(-5);
+  check(9);
+  check(3);
+  check(16);
+  check(52);
+  
+  let i = 0;
+  while (i++ < 5) console.log( i );
+  */
+  /***
+  for(let i=1; i<9; ++i) {
+    if (i%2==0) {
+      console.log(i);
+    }else {
+      continue;
+    }
+  }
+  
+  let i = 2;
+  while(i<9) {
+    if (i%2==0) {
+      console.log(i);
+    } 
+    i++;
+  }
+  /***
+  outer: for(let i=0; i<Infinity; i++) {
+    let values = 25;
+    if(values<100) {
+      values;
+    }else if ((values>100)||''||escape) {
+     break outer; 
+    }
+  }
+  
+ /*** let n = 4;
+  for(let i = 2; i < n; i++) {
+    for(let j=2; j<i; j++) {
+        console.log(i);
+        console.log(j);
+    }
+  }
+  
+  let n = 10;
+
+nextPrime:
+for (let i = 2; i <= n; i++) { // for each i...
+
+  for (let j = 2; j < i; j++) { // look for a divisor..
+    if (i % j == 0) continue nextPrime; // not a prime, go next i
+  }
+
+  console.log( i ); // a prime
+}
+
+function grant(age) {
+  (age>18)?console.log(true):console.log('Did you parent give permision ?');
+}
+
+function checkAge(age) {
+  return (age>18)||('Did your parent gave you permision?');
+}
+
+console.log(checkAge(12));
+console.log(checkAge(25));
+
+//grant(14);
+//grant(25);
+
+function min(a, b) {
+  if(a<b) {
+    return a;
+  }else {
+    return b
+  }
+} ***/
+
+//console.log(min(2,7));
+//console.log(min(7,3));
+
+let salaries = {
+John: 100,
+Ann: 160,
+Pete: 130
+}
+
+let total = 0;
+
+function sum() {
+  for(let amt in salaries) {
+    //let total=0;
+    //console.log(salaries[amt]);
+    total = total + salaries[amt];
+    
+    console.log(total);
+  }
+}
+
+sum();
+
+let menu = {
+  width: 200,
+  height: 300,
+  title: "My menu"
+};
+
+console.log(typeof(500));
+
+function multiply(menu) {
+  for (let item in menu) {
+    if (typeof(menu[item]) == 'number') {
+      //console.log(item);
+      menu[item] *= 2
+    }
+    //console.log(menu);
+  }
+  console.log(menu);
+}
+
+multiply(menu);
+
+const x = [1, 2, 43];
+x[1] = 7;
+console.log(x);
+console.log(6.35.toFixed(1));
+let num = 6.35
+console.log(Math.round(num*10)/10);
+//alert( Math.round(num * 100) / 100 ); 
+console.log(9.8+0.2);
+
+function randNum(min, max) {
+    return Math.random() * (max-Math.random());
+}
+console.log(randNum(2,5));
+
+let arr = [1, 2, 1, 2, 1, 2];
+
+let arrayLike = {
+  0: "something",
+  1: "else",
+  length: 2,
+  [Symbol.isConcatSpreadable]: true,
+  //length: 2
+};
+
+let newarr = arr.filter((item, index, array) => (item == 1) ?  console.log(`
+${item} was found at ${index} in [ ${array} ]
+`) : console.log('none'));
+
+newarr.forEach((item) => console.log(item));
+
+
+console.log( arr.concat(arrayLike) ); // 1,2,something,else
+
+let arr2 = [1, 2, 3, 4, 5];
+
+let result = arr2.reduce((sum, current) => sum + current, 2);
+
+console.log(result); // 15
+  </script>
+  
+
+</body>
+
+</html>

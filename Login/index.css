@@ -1,0 +1,196 @@
+body {
+ background-image: url("images/Background.jpeg");
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ height: 100%;
+ font-family: "Open Sans", sans-serif;
+}
+
+.logoimage {
+  border-radius: 0%;
+  margin: auto;
+  width: 10em;
+  margin-top: 10em;
+}
+
+.logo {
+  border-radius: 30%;
+  margin: auto;
+  width: 7em;
+  height: 7em;
+}
+
+.form {
+  background-color: white;
+  font-size: 30px;
+  width: 90%;
+  margin: auto;
+  margin-top: 1em;
+  height: 10.5em;
+  border-radius: 0.2em;
+}
+
+.signup {
+  margin-top: 1em;
+}
+
+.usernamediv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: center;
+}
+
+.fa-user, .fa-lock, .fa-mobile, .fa-envelope {
+  font-size: 0.6em;
+  padding: auto;
+  margin: auto;
+}
+
+.usernameinputdiv, .usericondiv {
+  border: solid;
+  padding: 0;
+}
+
+#user, #pwd, .input {
+  padding: 0.2em 0 0.2em 1em;
+  width: 90%;
+  margin: 0.4em 0.4em 0.4em 0.8em;
+  font-size: 0.55em;
+  outline: none;
+  border: none;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0.5em 0.5em 0.5em rgba(1, 1, 1, 2.5);
+  }
+  
+  .user {
+    border: solid green;
+  }
+
+#user::placeholder, .user::placeholder {
+  font-size: 0.85em;
+  padding-left:  1em;
+}
+
+.user::placeholder {
+  font-size: 0.85em;
+  padding-left: 0;
+}
+
+#pwd::placeholder {
+  font-size: 0.85em;
+  padding-left: 1em;
+}
+
+#checkbox {
+  margin-left: 1.2em;
+  display: inline-block;
+}
+
+
+label {
+  color: #666;
+  font-size: .875rem;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.loginbtn, .signupbtn, .activeloginbtn {
+  background-color: #00A9FF;
+  /*box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);*/
+  padding: 0.4em 0 0.4em 0;
+  width: 45%;
+  /*margin: 1.2em 0.4em 0.4em 0.8em;*/
+  font-size: 0.6em;
+  color: white;
+  border-radius: 0.3em;
+  border: none;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.btnholder {
+  padding: 1em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.activeloginbtn {
+  background-color: #EEEEEE;
+  color: #00A9FF;
+}
+
+.form2 {
+  background-color: white;
+  font-size: 30px;
+  width: 90%;
+  margin: auto;
+  margin-top: 1em;
+  height: 10.5em;
+  border-radius: 0.2em;
+}
+
+.flexdiv, flexdiv2 {
+  display: flex;
+  align-items: center;
+  vertical-align: center;
+  padding: 0 0 0 0.5em;
+  color: lightgrey;
+  border-top: solid lightgrey 0.03em;
+}
+
+.icondiv {
+  margin-top: -0.3em;
+}
+
+.input {
+  padding: 0.4em 0 0.4em 0;
+  margin-left: 1em;
+  width: 100%;
+}
+
+.input::placeholder {
+  padding:0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.phone, .email {
+  font-size: 0.5em;
+  margin: 0;
+  padding: 0.8em 0 0.8em 2.5em;
+  color: #484848;
+  width: 100%;
+}
+
+.phoneregister, .emailregister {
+  padding: auto;
+  margin: auto;
+  font-size: 0.5em;
+  display: inline-block;
+}
+
+.flexdiv2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.orange {
+  color: #FF5B0E;
+  border-bottom: solid #FF5B0E 0.1em;
+}
+
+.container {
+  margin: auto;
+}
+
+.none {
+  display: none;
+}
+
+.invisible {
+  display: none;
+}

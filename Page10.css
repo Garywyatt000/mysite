@@ -1,0 +1,48 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  padding: 0.9em;
+  color: white;
+  background-color: red;
+  text-align: center;
+  font-size: 0.9em;
+  display: grid;
+  grid-template-columns: 3em 1fr;
+  color: white;
+}
+
+
+
+.anchor {
+  color: black;
+  text-decoration-line: none;
+}
+
+
+.asset {
+  background-color: white;
+  color: red;
+  border-bottom: solid red 0.1em;
+  font-size: 0.9em;
+  padding: 0.7em 0 0.7em 0;
+  color: red;
+  text-align: center;
+
+}
+
+.null {
+  background-color: white;
+  color: red;
+  border-bottom: solid red 0.1em;
+  border-bottom: solid #DDDDDD 0.1em;
+  height: 2.5em;
+}
+
+.record {
+  text-align: center;
+  font-size: 0.7em;
+  margin-top: 3em;
+}

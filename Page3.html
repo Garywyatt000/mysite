@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="Page3.css">
+  
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css ">
+</head>
+
+<body>
+      <div class="fixed">
+    <div class="fixedflex">
+      <a href="" class="icon">
+        <i id="" class="fa fa-shopping-bag" aria-hidden="true"></i>
+       Grab
+      </a>
+      <a href="Page5.html" onclick="pop_up()" class="icon"> 
+      <i class="fa fa-tasks" aria-hidden="true"></i>
+      Task
+      </a>
+      <a href="Page2.html" class="icon">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        Home
+      </a>
+      <a id="recharge" href="Page3.html" class="icon">
+          <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+        recharge
+      </a>
+      <a id="y" href="Page4.html" class="icon">
+        <i class="fa fa-user-circle" aria-hidden="true"></i>
+        Mine
+      </a>
+    </div>
+  </div>
+
+  
+  
+  <header class="header">
+    <p class="recharge">Recharge</p>
+  </header>
+  <div class="firstbox">
+    <p class="recharge">Recharge amount</p>
+    <div class="border">
+      <label for="amount"  class="dollar">
+      &#36;
+      </label>
+    <input id="amount" type="number" placeholder= "Please enter the recharge amount ">
+    </div>
+    <p class="ri">Recharge instruction</p>
+    <div class="grid">
+      <button onclick="appear(this)" value="100" class="btn"> &#36;100 </button>
+      <button onclick="appear(this)" class="btn" value="300"> &#36;300 </button>
+      <button onclick="appear(this)" class="btn" value="500"> &#36;500 </button>
+      <button onclick="appear(this)" class="btn" value="1000"> &#36;1000 </button>
+      <button onclick="appear(this)" class="btn" value="3000"> &#36;3000 </button>
+      <button onclick="appear(this)" class="btn" value="5000"> &#36;5000 </button>
+      <button onclick="appear(this)" class="btn" value="10000"> &#36;10000 </button>
+      <button onclick="appear(this)" class="btn" value="50000"> &#36;50000 </button>
+    </div>
+  </div>
+  <div class="nextdiv">
+    <button class="next">Next step</button>
+  </div>
+  <div class="secondbox">
+    <div>
+    <p class="payment"> Please select a payment channel</p>
+    <img id="card" src="Images/Card.png" alt="x">
+    <p class="creditcard">Credit/Debit card <br> <span class="mastercard"> via Mastercard </span></p>
+    <p class="consult"> Consult online customer service</p>
+    <p class="consult2">Consult online customer service</p>
+    </div>
+    <div>
+    <img id="card" src="Images/Card.png" alt="x">
+    <p class="creditcard">Credit/Debit card <br> <span class="mastercard"> via Mastercard </span></p>
+    <p class="consult"> Fill out the transfer receipt </p>
+    <p class="consult2">Bank Card Transfer Click Next </p>
+    </div>
+
+<script src="Page3.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+body {
+  background-image: url("");
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: red;
+  margin: auto;
+  padding: 0.7em;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 3em 1fr;
+  color: white;
+}
+
+.anchor {
+  color: black;
+}
+
+.top {
+  padding: auto;
+  color: white;
+}
+
+.arrive, .transfer {
+  font-size: 0.8em;
+  color: #434344;
+}
+
+.transfer {
+  margin: 1em 0 0 1em
+}
+
+.arrive {
+  margin: 0.3em 0 1em 1em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 3.5fr;
+  border-bottom: solid lightgrey 0.05em;
+  padding: 0.5em;
+}
+
+.recharge {
+  font-weight: 700;
+  font-size: 0.8em;
+  margin-left: 1em;
+  padding-left: 0;
+}
+
+.wallet {
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+.contact {
+  
+  font-size: 0.8em;
+  margin: auto;
+}
+
+a {
+  color: #434344;
+  text-decoration-line: none;
+}
+
+.box {
+  margin: 3em 0 0 0;
+  padding-left: 4.5em;
+  border-bottom: solid lightgrey 0.05em;
+}
+
+.pic {
+  margin: auto;
+  height: 12em;
+  width: 24em;
+  background-color: lightgrey;
+  color: white;
+}
+
+.click {
+  text-align: center;
+  margin-top: 3.5em;
+}
+
+.upload {
+  color: #434344;
+  font-size: 0.7em;
+  margin-left: 6em;
+}
+
+.notice {
+  padding: 3em 0.5em 3em 0.5em;
+  font-size: 0.8em;
+  color: #434344;
+}
+
+.complete {
+  background-color: #101120;
+  color: white;
+  padding: 0.7em;
+  width: 95%;
+  margin-left: 0.7em;
+  font-size: 0.8em;
+  border-radius: 0.3em;
+}
+
+.tips {
+  margin-top: 1.5em;
+  color: #434344;
+  font-size: 0.8em;
+  padding: 0.5em;
+}

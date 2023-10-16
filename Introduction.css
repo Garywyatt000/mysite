@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.header {
+  padding: 1em;
+  color: white;
+  background-color: red;
+  text-align: center;
+  font-size: 0.9em;
+  display: grid;
+  grid-template-columns: 3em 1fr;
+  color: white;
+  margin-bottom: 1em;
+}
+
+.anchor {
+  text-decoration: none;
+  color: black;
+}
+.text {
+  padding: 0 0.5em 0 0.5em;
+  color: #525253;
+  line-height: 1.5em;
+}
