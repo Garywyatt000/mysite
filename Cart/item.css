@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  padding: 0.9em;
+  color: white;
+  background-color: ;
+  text-align: center;
+  font-size: 0.9em;
+  display: grid;
+  grid-template-columns: 3em 1fr;
+  color: white;
+}
+
+.anchor {
+  text-decoration: none;
+  color: black;
+}
+
+.titan {
+  padding: 0 0.5em 0 0.5em;
+  margin-top: 0.6em;
+}
+
+.text {
+  padding: 1em 0.5em 0.5em 0.5em;
+  font-size: 0.9em;
+  color: #484848;
+  }
+  
+.amt {
+  padding: 0.5em 0.5em 1em 0.5em;
+  color: orange;
+  font-size: 1.1em;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 0.75em;
+  color: grey;
+  padding: 1em;
+  border-top: solid lightgrey 0.005em;
+}
+
+.details {
+  background-color: #E8E8E8;
+  color: grey;
+  font-size: 0.85em;
+  text-align: center;
+  padding: 1em;
+}
+
+.line {
+  height: 2em;
+  width: 1.5em;
+  color: red;
+  background-color red;
+  border: solid red 0.01em;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+.about{
+  padding: 1em 0.5em 0em 0.5em;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: black;
+}
+
+.describtion {
+  padding: 1.5em 2em 2em 2em;
+  font-size: 0.85em;
+  color: #333333;
+  line-height: 1.5em;
+}
