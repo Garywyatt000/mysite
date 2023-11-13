@@ -3,15 +3,33 @@ let item;
 const divEl = document.querySelector('.div');
 
 showItem = (id) => {
-  item = item = data.filter((x) => {
-        return x.id1 == id.id;});
-        
+  let newid = 'id';
+  console.log(newid);
+  if(newid.startsWith('F')) {
+    console.log('id1');
+  } else {
+    console.log('no');
+  }
+  
+  item = data.find((key) => {
+    //console.log(id.id);
+    //console.log(id);
+    //console.log(key)
+    let y = Object.keys(key);
+    console.log(y);
+    for(item of y) {
+      //console.log(item);
+      if(y[item]==id)
+      //console.log(key);
+      return key;
+    }
+  })
+  
+  console.log(item);
+  //console.log(item);
     display = item.map((x)=> {
-      let {src1, abt1, sell1, award1, src8, abt8, sell8, award8, src12, abt2, sell2, award2, src3, abt3, sell3, award3, src4, abt4, sell4, award4, src5, abt5, sell5, award5, src6, abt6, sell6, award6, src7, abt7, sell7, award7,
-      }=item;
-      //console.log(id);
-     // if()
-      return `
+      let {src1, abt1, amt1, sell1, award1, src8, abt8, amt8, sell8, award8, src12, abt2, sell2, award2, src3, abt3, amt3, sell3, award3, src4, abt4, amt4, sell4, award4, src5, abt5, amt5, sell5, award5, src6, abt6, amt6, sell6, award6, src7, abt7, amt7, sell7, award7, details1, details2, details3, details4, details5, details6, details7, details8,}=item;
+       return `
         <img class="img" src=${src1}>
   <div class="text">
     ${abt1}

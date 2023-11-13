@@ -54,7 +54,7 @@ function displayItems(arr) {
         </div>
         <div class="productbox">
             <div id=${id1} class="wb">
-              <img class="img" src=${src1} alt="x">
+              <img class="img" src=${src1} alt="x">, 
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc1}
@@ -464,7 +464,7 @@ function displayItems(arr) {
         </div>
         <div class="productbox">
             <div id=${id1} class="wb">
-              <img class="img" src=${src1} alt="x">
+              <img onclick='showItem(${id1})' class="img" src=${src1} alt="x">
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc1}
@@ -475,7 +475,7 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id2} class="wb">
-              <img class="img" src=${src2} alt="x">
+              <img onclick='showItem(${id2})' class="img" src=${src2} alt="x">
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc2}
