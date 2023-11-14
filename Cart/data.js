@@ -66,6 +66,14 @@ const data = [
     src8: "/Order/Dell.png",
     desc8: "Dell 2023 Vostro 3910",
     amt8: "&#36;1249.0",
+    num1: "1",
+    num2: "2",
+    num3: "3",
+    num4: "4",
+    num5: "5",
+    num6: "6",
+    num7: "7",
+    num8: "8",
   },
   /*** Fall Ship ***/
   {
@@ -78,6 +86,7 @@ const data = [
     sell1: "4",
     award1: "5",
     details1: "ROAST: Take your pick; A mix of roasts from light to dark. <br> FLAVOR PROFILE: Morning Blend: Mild and satisfying with a subtle kick, striking a perfect balance between the quiet you want and the jolt you know you need to get moving in the morning; Donut Shop Blend: this classic brew is sweet and smooth, striking the perfect balance between mellow and bold, to deliver just enough bite to brighten your day; 100% Colombian: Lively and bright, starting rich and warmly aromatic—but landing softly with its mild acidity; French Roast: A velvety body with a soft, smoky flavor; intensely rich but always smooth <br> 100% Gluten Free & Non-GMO: Our coffee products do not contain gluten or genetically modified ingredients <br> BRAND STORY: Since 1979 Victor Allen has been proud to bring you high-quality, roaster-fresh perfection. We source 100% Arabica beans from all over the world and use precision roasting techniques to guarantee the very best coffee <br> INGREDIENTS: 100% Arabica coffee <br> CAFFEINE CONTENT: Victor Allen's coffees range from 90-150 mgs per serving <br> SELECTION: Victor Allen's offers a wide selection of beverage choices from light, medium and dark roasts to everyday and seasonal flavors, in bagged, single serve and ready to drink formats. <br> HOW TO BREW RECOMMENDATIONS: STEP ONE: load your single serve cup into your brewer. STEP TWO: select the 8-floz setting on your brewer for the best taste. STEP THREE: to prevent dripping upon completion of brewing carefully tilt the single serve cup upon removal from your brewer. STEP FOUR: Enjoy your precision roasted Victor Allen's Coffee. <br> COMPATIBILITY: For use in all single serve brewing systems, including Keurig 2.0. Single Serve coffee pods for Keurig K-Cup Brewers. Keurig is a registered trademark of KEURIG GREEN MOUNTAIN, INC. K-Cups is a registered trademark of KEURIG GREEN MOUNTAIN, INC.",
+    num1: "1",
   },
     /*Household Essentials*/
   {
@@ -186,6 +195,14 @@ STAY DRY. Made with DryVent performance tech and coated with a Durable Water-Rep
     src8: "/Order/The.png",
     desc8: "THE NORTH FACE Boys",
     amt8: "&#36;399.0",
+    num1: "1",
+    num2: "2",
+    num3: "3",
+    num4: "4",
+    num5: "5",
+    num6: "6",
+    num7: "7",
+    num8: "8",
   },
   /*Autos and Tyres*/
   {
@@ -286,6 +303,12 @@ Adult Rider Max Weight: 275 lbs
     src6: "/Order/Hyperbicycles.png",
     desc6: "Hyper Bicycle Men's 29\"",
     amt6: "&#36;298.0",
+    num1: "1",
+    num2: "2",
+    num3: "3",
+    num4: "4",
+    num5: "5",
+    num6: "6",
   },
   /*Office and School Supplies*/
   {
@@ -323,7 +346,9 @@ Easyfashion 2pcs Upholstered Office Chair with High Back, Black
     src3: "/Order/Easyfashion.png",
     desc3: "Easyfashion 2pcs",
     amt3: "&#36;299.0",
-    
+    num1: "1",
+    num2: "2",
+    num3: "3",
   },
   /* Beauty*/
   {
@@ -376,6 +401,10 @@ Replaceable OneBlade lasts up to 4 months*. (*For best shaving experience. Based
     src4: "/Order/Philips.png",
     desc4: "Philips Norelco Oneblade",
     amt4: "&#36;20.9",
+    num1: "1",
+    num2: "2",
+    num3: "3",
+    num4: "4",
   },
   /*Kids*/
   {
@@ -403,6 +432,8 @@ The 6-wheel tractor features a dump bed,working shovel and lockable tailgate.Uni
     src2: "/Order/Joyracer.png",
     desc2: "Joyracer 24V Ride on Toys",
     amt2: "&#36;788.0",
+    num1: "1",
+    num2: "2",
   },
   /* Home, Futniture & Appliances */ 
   {
@@ -501,6 +532,12 @@ TrueDetect Stays on Task and Out of Trouble. With the advanced TrueDetect 3D tec
     src6: "/Order/Ecovacs.png",
     desc6: "ECOVACS DEEBOT T9+",
     amt6: "&#36;499.8",
+    num1: "1",
+    num2: "2",
+    num3: "3",
+    num4: "4",
+    num5: "5",
+    num6: "6",
   },
   /*Patio & Garden*/
   {
@@ -550,6 +587,10 @@ Next year when it's time to hit the back yard here are a few ways to keep your f
     src4: "/Order/Domi.png",
     desc4: "Domi Outdoor Living 10' X",
     amt4: "&#36;1999.0",
+    num1: "1",
+    num2: "2",
+    num3: "3",
+    num4: "4",
   },
   /* Clothing, Shoes & Accesories */
   {
@@ -615,6 +656,10 @@ EASY WASH: The French beret can be hand washed when needed. Dipping the beret in
     src4: "/Order/Vercy.png",
     desc4: "VECRY Lady French Beret",
     amt4: "&#36;21.8",
+    num1: "1",
+    num2: "2",
+    num3: "3",
+    num4: "4",
   },
   /* Women Product */
   {
@@ -709,6 +754,12 @@ Please refer to size measurement in the last item picture before ordering
     src6: "/Order/Wdirara.png",
     desc6: "WDIRARA Women's Silk",
     amt6: "&#36;27.9",
+    num1: "1",
+    num2: "2",
+    num3: "3",
+    num4: "4",
+    num5: "5",
+    num6: "6",
   },
   /* Electronics */
   {
@@ -771,6 +822,10 @@ Please refer to size measurement in the last item picture before ordering
     src4: "/Order/Smart49.png",
     desc4: "Smart Board 49 Inch Digital",
     amt4: "&#36;1999.0",
+    num1: "1",
+    num2: "2",
+    num3: "3",
+    num4: "4",
   },
   /*Luxury*/
   {
@@ -901,6 +956,15 @@ We provide a 60-day MONEY-BACK GUARANTEE, no questions asked. The customer is re
     src8: "/Order/Liebishfancy.png",
     desc8: "Leibish & Co 0.68Cts Fancy",
     amt8: "&#36;2280.0",
+    num1: "1",
+    num2: "2",
+    num3: "3",
+    num4: "4",
+    num5: "5",
+    num6: "6",
+    num7: "7",
+    num8: "8",
+
   },
   /* Home Improvement */
   {
@@ -1009,6 +1073,12 @@ Power Failure Auto Restart
     src6: "/Order/Auseo.png",
     desc6: "Auseo 5000BTU",
     amt6: "&#36;178.0",
+    num1: "1",
+    num2: "2",
+    num3: "3",
+    num4: "4",
+    num5: "5",
+    num6: "6",
   },
   /* Art, Craft & Sewing */
   {
@@ -1079,6 +1149,10 @@ Slight color variation may occur
     src4: "/Order/Fabric.png",
     desc4: "FabricLA Acrylic Felt Fabric",
     amt4: "&#36;179.0",
+    num1: "1",
+    num2: "2",
+    num3: "3",
+    num4: "4",
   },
   /* Luxury Clothing */
   {
@@ -1201,5 +1275,13 @@ Wash Recommended With Cold Water/Do Not Bleach/Hang Or Line Dry/Wash with like c
     src8: "/Order/Idomosee.png",
     desc8: "iDomosee Womens",
     amt8: "&#36;178.0",
+    num1: "1",
+    num2: "2",
+    num3: "3",
+    num4: "4",
+    num5: "5",
+    num6: "6",
+    num7: "7",
+    num8: "8",
   },
   ];
