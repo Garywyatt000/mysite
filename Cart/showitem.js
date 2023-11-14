@@ -11,7 +11,7 @@ function showItem(e, id) {
     console.log('no');
   }
   
-  item = data.find((key) => {
+  item = data.filter((key) => {
     let keys = Object.keys(key);
     //console.log(keys);
     for (let info of keys) {
@@ -28,9 +28,10 @@ function showItem(e, id) {
   console.log(event.dataset);
   console.log(event.hasAttribute('data-num1'));
   
-  //console.log(item);
-  /*
-    display = item.map((x)=> {
+  
+  
+  
+  display = item.map((x)=> {
       let {src1, abt1, amt1, sell1, award1, src8, abt8, amt8, sell8, award8, src12, abt2, sell2, award2, src3, abt3, amt3, sell3, award3, src4, abt4, amt4, sell4, award4, src5, abt5, amt5, sell5, award5, src6, abt6, amt6, sell6, award6, src7, abt7, amt7, sell7, award7, details1, details2, details3, details4, details5, details6, details7, details8,}=item;
        return `
         <img class="img" src=${src1}>
@@ -65,7 +66,7 @@ function showItem(e, id) {
   ${details1}
   </div>
       ` 
-    }) */
+    }) 
 }
 /*
 console.log(data);
