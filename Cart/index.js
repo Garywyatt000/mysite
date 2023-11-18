@@ -1,5 +1,6 @@
 const basedEl = document.querySelector('.based');
-
+let num1 = 12
+console.log(data);
 function displayItems(arr) {
   let display = arr.map((item)=>{
     let {heading, id1, link1, src1, desc1, amt1, id2, link2, src2, desc2, amt2, id3, link3, src3, desc3,
@@ -23,8 +24,10 @@ function displayItems(arr) {
         </div>
         <div class="productbox">
           
-            <div id=${id1} class="wb">
-              <img data-num${num1}=${num1} onclick='showItem(event, "${id1}")' class="img" src=${src1} alt="x">
+            <div id=${num1} class="wb">
+            <a href='item.html?num=${id1}&sort=${num1}'>
+              <img id=${num1} data-num${num1}=${num1}  class="img" src=${src1} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc1}
@@ -54,7 +57,9 @@ function displayItems(arr) {
         </div>
         <div class="productbox">
             <div id=${id1} class="wb">
-              <img data-num${num1}=${num1} onclick='showItem(event, "${id1}")' class="img" src=${src1} alt="x">, 
+            <a href='item.html?num=${id1}&sort=${num1}'>
+              <img data-num${num1}=${num1} class="img" src=${src1} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc1}
@@ -65,7 +70,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id2} class="wb">
-              <img data-num${num2}=${num2} onclick='showItem(event, "${id2}")' class="img" src=${src2} alt="x">
+            <a href='item.html?num=${id2}&sort=${num2}'>
+              <img data-num${num2}=${num2} class="img" src=${src2} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc2}
@@ -96,7 +103,9 @@ function displayItems(arr) {
         </div>
         <div class="productbox">
             <div id=${id1} class="wb">
-              <img data-num${num1}=${num1} onclick='showItem(event, "${id1}")' class="img" src=${src1} alt="x">
+            <a href='item.html?num=${id1}&sort=${num1}'>
+              <img data-num${num1}=${num1} class="img" src=${src1} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc1}
@@ -107,7 +116,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id2} class="wb">
-              <img data-num${num2}=${num2} onclick='showItem(event, "${id2}")' class="img" src=${src2} alt="x">
+            <a href='item.html?num=${id2}&sort=${num2}'>
+              <img data-num${num2}=${num2} class="img" src=${src2} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc2}
@@ -118,7 +129,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id3} class="wb">
-              <img data-num${num3}=${num3} onclick='showItem(event, "${id3}")' class="img" src=${src3} alt="x">
+            <a href='item.html?num=${id3}&sort=${num3}'>
+              <img data-num${num3}=${num3} class="img" src=${src3} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc3}
@@ -148,7 +161,9 @@ function displayItems(arr) {
         </div>
         <div class="productbox">
             <div id=${id1} class="wb">
-              <img data-num${num1}=${num1} onclick='showItem(event, "${id1}")' class="img" src=${src1} alt="x">
+            <a href='item.html?num=${id1}&sort=${num1}'>
+              <img data-num${num1}=${num1} class="img" src=${src1} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc1}
@@ -159,7 +174,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id2} class="wb">
-              <img data-num${num2}=${num2} onclick='showItem(event, "${id2}")' class="img" src=${src2} alt="x">
+            <a href='item.html?num=${id2}&sort=${num2}'>
+              <img data-num${num2}=${num2} class="img" src=${src2} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc2}
@@ -170,7 +187,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id3} class="wb">
-              <img data-num${num3}=${num3} onclick='showItem(event, "${id3}")' class="img" src=${src3} alt="x">
+            <a href='item.html?num=${id3}&sort=${num3}'>
+              <img data-num${num3}=${num3} class="img" src=${src3} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc3}
@@ -181,7 +200,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id4} class="wb">
-              <img data-num${num4}=${num4} onclick='showItem(event, "${id4}")' class="img" src=${src4} alt="x">
+            <a href='item.html?num=${id4}&sort=${num4}'>
+              <img data-num${num4}=${num4} class="img" src=${src4} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc4}
@@ -210,7 +231,9 @@ function displayItems(arr) {
         </div>
         <div class="productbox">
             <div id=${id1} class="wb">
-              <img data-num${num1}=${num1} onclick='showItem(event, "${id1}")' class="img" src=${src1} alt="x">
+            <a href='item.html?num=${id1}&sort=${num1}'>
+              <img data-num${num1}=${num1} class="img" src=${src1} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc1}
@@ -221,7 +244,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id2} class="wb">
-              <img data-num${num2}=${num2} onclick='showItem(event, "${id2}")' class="img" src=${src2} alt="x">
+            <a href='item.html?num=${id2}&sort=${num2}'>
+              <img data-num${num2}=${num2} class="img" src=${src2} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc2}
@@ -232,7 +257,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id3} class="wb">
-              <img data-num${num3}=${num3} onclick='showItem(event, "${id3}")' class="img" src=${src3} alt="x">
+            <a href='item.html?num=${id3}&sort=${num3}'>
+              <img data-num${num3}=${num3} class="img" src=${src3} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc3}
@@ -243,7 +270,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id4} class="wb">
-              <img data-num${num4}=${num4} onclick='showItem(event, "${id4}")' class="img" src=${src4} alt="x">
+            <a href='item.html?num=${id4}&sort=${num4}'>
+              <img data-num${num4}=${num4} class="img" src=${src4} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc4}
@@ -254,7 +283,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id5} class="wb">
-              <img data-num${num5}=${num5} onclick='showItem(event, "${id5}")' class="img" src=${src5} alt="x">
+            <a href='item.html?num=${id5}&sort=${num5}'>
+              <img data-num${num5}=${num5} class="img" src=${src5} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc5}
@@ -283,7 +314,9 @@ function displayItems(arr) {
         </div>
         <div class="productbox">
             <div id=${id1} class="wb">
-              <img data-num${num1}=${num1} onclick='showItem(event, "${id1}")' class="img" src=${src1} alt="x">
+            <a href='item.html?num=${id1}&sort=${num1}'>
+              <img data-num${num1}=${num1} class="img" src=${src1} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc1}
@@ -294,7 +327,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id2} class="wb">
-              <img data-num${num2}=${num2} onclick='showItem(event, "${id2}")' class="img" src=${src2} alt="x">
+            <a href='item.html?num=${id2}&sort=${num2}'>
+              <img data-num${num2}=${num2} class="img" src=${src2} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc2}
@@ -305,7 +340,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id3} class="wb">
-              <img data-num${num3}=${num3} onclick='showItem(event, "${id3}")' class="img" src=${src3} alt="x">
+            <a href='item.html?num=${id3}&sort=${num3}'>
+              <img data-num${num3}=${num3} class="img" src=${src3} alt="x">
+            </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc3}
@@ -316,7 +353,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id4} class="wb">
-              <img data-num${num4}=${num4} onclick='showItem(event, "${id4}")' class="img" src=${src4} alt="x">
+            <a href='item.html?num=${id4}&sort=${num4}'>
+              <img data-num${num4}=${num4} class="img" src=${src4} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc4}
@@ -327,7 +366,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id5} class="wb">
-              <img data-num${num5}=${num5} onclick='showItem(event, "${id5}")' class="img" src=${src5} alt="x">
+            <a href='item.html?num=${id5}&sort=${num5}'>
+              <img data-num${num5}=${num5} class="img" src=${src5} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc5}
@@ -338,7 +379,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id6} class="wb">
-              <img data-num${num6}=${num6} onclick='showItem(event, "${id6}")' class="img" src=${src6} alt="x">
+            <a href='item.html?num=${id6}&sort=${num6}'>
+              <img data-num${num6}=${num6} class="img" src=${src6} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc6}
@@ -368,7 +411,9 @@ function displayItems(arr) {
         </div>
         <div class="productbox">
             <div id=${id1} class="wb">
-              <img data-num${num1}=${num1} onclick='showItem(event, "${id1}")' class="img" src=${src1} alt="x">
+            <a href='item.html?num=${id1}&sort=${num1}'>
+              <img data-num${num1}=${num1} class="img" src=${src1} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc1}
@@ -379,7 +424,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id2} class="wb">
-              <img data-num${num2}=${num2} onclick='showItem(event, "${id2}")' class="img" src=${src2} alt="x">
+            <a href='item.html?num=${id2}&sort=${num2}'>
+              <img data-num${num2}=${num2} class="img" src=${src2} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc2}
@@ -390,7 +437,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id3} class="wb">
-              <img data-num${num3}=${num3} onclick='showItem(event, "${id3}")' class="img" src=${src3} alt="x">
+            <a href='item.html?num=${id3}&sort=${num3}'>
+              <img data-num${num3}=${num3} class="img" src=${src3} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc3}
@@ -401,7 +450,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id4} class="wb">
-              <img data-num${num4}=${num4} onclick='showItem(event, "${id4}")' class="img" src=${src4} alt="x">
+            <a href='item.html?num=${id4}&sort=${num4}'>
+              <img data-num${num4}=${num4} class="img" src=${src4} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc4}
@@ -412,7 +463,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id5} class="wb">
-              <img data-num${num5}=${num5} onclick='showItem(event, "${id5}")' class="img" src=${src5} alt="x">
+            <a href='item.html?num=${id5}&sort=${num5}'>
+              <img data-num${num5}=${num5} class="img" src=${src5} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc5}
@@ -423,7 +476,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id6} class="wb">
-              <img data-num${num6}=${num6} onclick = 'showItem(event, "${id6}")' class="img" src=${src6} alt="x">
+            <a href='item.html?num=${id6}&sort=${num6}'>
+              <img data-num${num6}=${num6} class="img" src=${src6} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc6}
@@ -434,7 +489,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id7} class="wb">
-              <img data-set${num7}=${num7} onclick='showItem(event, "${id7}")' class="img" src=${src7} alt="x">
+            <a href='item.html?num=${id7}&sort=${num7}'>
+              <img data-set${num7}=${num7} class="img" src=${src7} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc7}
@@ -464,7 +521,9 @@ function displayItems(arr) {
         </div>
         <div class="productbox">
             <div id=${id1} class="wb">
-              <img data-num${num1}=${num1} onclick='showItem(event, "${id1}")' class="img" src=${src1} alt="x">
+            <a href='item.html?num=${id1}&sort=${num1}'>
+              <img data-num${num1}=${num1} class="img" src=${src1} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc1}
@@ -475,7 +534,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id2} class="wb">
-              <img data-num${num2}=${num2} onclick='showItem(event, "${id2}")' class="img" src=${src2} alt="x">
+            <a href='item.html?num=${id2}&sort=${num2}'>
+              <img data-num${num2}=${num2} class="img" src=${src2} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc2}
@@ -486,7 +547,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id3} class="wb">
-              <img data-num${num3}=${num3} onclick='showItem(event, "${id3}")' class="img" src=${src3} alt="x">
+            <a href='item.html?num=${id3}&sort=${num3}'>
+              <img data-num${num3}=${num3} class="img" src=${src3} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc3}
@@ -497,7 +560,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id4} class="wb">
-              <img data-num${num4}=${num4} onclick='showItem(event, "${id4}")' class="img" src=${src4} alt="x">
+            <a href='item.html?num=${id4}&sort=${num4}'>
+              <img data-num${num4}=${num4} class="img" src=${src4} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc4}
@@ -508,7 +573,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id5} class="wb">
-              <img data-num${num5}=${num5} onclick='showItem(event, "${id5}")' class="img" src=${src5} alt="x">
+            <a href='item.html?num=${id5}&sort=${num5}'>
+              <img data-num${num5}=${num5} class="img" src=${src5} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc5}
@@ -519,7 +586,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id6} class="wb">
-              <img data-num${num6}=${num6} onclick='showItem(event, "${id6}")' class="img" src=${src6} alt="x">
+            <a href='item.html?num=${id6}&sort=${num6}'>
+              <img data-num${num6}=${num6} class="img" src=${src6} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc6}
@@ -530,7 +599,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id7} class="wb">
-              <img data-num${num7}=${num7} onclick='showItem(event, "${id7}")' class="img" src=${src7} alt="x">
+            <a href='item.html?num=${id7}&sort=${num7}'>
+              <img data-num${num7}=${num7} class="img" src=${src7} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc7}
@@ -541,7 +612,9 @@ function displayItems(arr) {
               </div>
             </div>
             <div id=${id8} class="wb">
-              <img data-num${num8}=${num8} onclick='showItem(event, "${id8}")' class="img" src=${src8} alt="x">
+            <a href='item.html?num=${id8}&sort=${num8}'>
+              <img data-num${num8}=${num8} class="img" src=${src8} alt="x">
+              </a>
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc8}
