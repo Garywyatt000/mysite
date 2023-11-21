@@ -1,5 +1,6 @@
 const data = [
   {
+    href: "",
     cls: "out",
     id: "recharge",
     img: "/Images/Recharge.png",
@@ -7,6 +8,7 @@ const data = [
   },
 
   {
+    href:"",
     cls: "out",
     id: "withdrawl",
     img: "/Images/Withdraw.png",
@@ -14,6 +16,7 @@ const data = [
   },
 
   {
+    href: "",
     cls: "out",
     id: "Service",
     img: "/Images/Service.png",
@@ -21,6 +24,7 @@ const data = [
   },
 
   {
+    href: "Inviteclone.html",
     cls: "out",
     id: "invite",
     img: "/Images/Invite.png",
@@ -32,7 +36,7 @@ const data = [
 const data1 = [
   {
     id: "btn1",
-    href: "/Cart/Order.html",
+    href: "Order.html",
     src: "/Images/Amazoncart.png",
     content: "over &#36;100 &#124; 0.3% &#124; 45 product <br> <span> Silver member </span>"
   },
@@ -143,18 +147,18 @@ const member = [
   ];
 
 const info = [{
-    link: '/Introduction.html',
+    link: 'Introduction.html',
     img: '/Images/Img1.png',
     text: 'Introduction of the platform'
   },
   {
-    link: '/Agency.html',
+    link: 'Agency.html',
     img: '/Images/Img2.png',
     text: 'Agency cooperation'
 
   },
   {
-    link: '/Rule.html',
+    link: 'Rule.html',
     img: '/Images/Img3.png',
     text: 'Rule description'
 
@@ -200,7 +204,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 function displayGridEl(arr) {
   let display = arr.map(function(item) {
-    return `<a href="#">
+    return `<a href=${item.href}>
     <div class = ${item.cls}>
       <button class = ${item.id}>
         <img id=${item.id} class="pic" src=${item.img} alt="x"> ${item.content}

@@ -21,7 +21,7 @@ display = item.map((x)=> {
       let {src1, abt1, amt1, sell1, award1, src8, abt8, amt8, sell8, award8, src2, amt2, abt2, sell2, award2, src3, abt3, amt3, sell3, award3, src4, abt4, amt4, sell4, award4, src5, abt5, amt5, sell5, award5, src6, abt6, amt6, sell6, award6, src7, abt7, amt7, sell7, award7, details1, details2, details3, details4, details5, details6, details7, details8,}=x;
       if(num == 'num1') {
         return `
-        <img class="img" src='${src1}'>
+        <img class="img" src=${src1}>
         <div class="text">
           ${abt1}
         </div>
@@ -87,7 +87,7 @@ display = item.map((x)=> {
   ${details2}
   </div>
       ` 
-      } else if (event.hasAttribute('data-num3')) {
+      } else if (num == 'num3') {
         return `
         <img class="img" src=${src3}>
   <div class="text">
@@ -121,7 +121,7 @@ display = item.map((x)=> {
   ${details3}
   </div>
       ` 
-      } else if (event.hasAttribute('data-num4')) {
+      } else if (num == 'num4') {
         return `
         <img class="img" src=${src4}>
   <div class="text">
@@ -155,7 +155,7 @@ display = item.map((x)=> {
   ${details4}
   </div>
       ` 
-      } else if (event.hasAttribute('data-num5')) {
+      } else if (num == 'num5') {
         return `
         <img class="img" src=${src5}>
   <div class="text">
@@ -189,7 +189,7 @@ display = item.map((x)=> {
   ${details5}
   </div>
       ` 
-      } else if (event.hasAttribute('data-num6')) {
+      } else if (num == 'num6') {
         return `
         <img class="img" src=${src6}>
   <div class="text">
@@ -223,7 +223,7 @@ display = item.map((x)=> {
   ${details6}
   </div>
       ` 
-      } else if (event.hasAttribute('data-num7')) {
+      } else if ( num == 'num7') {
         return `
         <img class="img" src=${src7}>
   <div class="text">
@@ -257,7 +257,7 @@ display = item.map((x)=> {
   ${details7}
   </div>
       ` 
-      } else if (event.hasAttribute('data-num8')) {
+      } else if (num == 'num8') {
         return `
         <img class="img" src=${src8}>
   <div class="text">

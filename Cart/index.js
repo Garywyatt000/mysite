@@ -32,9 +32,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc1}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt1}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
           
@@ -64,9 +73,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc1}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt1}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id2} class="wb">
@@ -77,9 +95,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc2}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt2}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
     </div>
@@ -110,9 +137,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc1}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt1}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id2} class="wb">
@@ -123,9 +159,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc2}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt2}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id3} class="wb">
@@ -136,9 +181,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc3}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt3}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
           
@@ -168,9 +222,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc1}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt1}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id2} class="wb">
@@ -181,9 +244,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc2}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt2}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id3} class="wb">
@@ -194,9 +266,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc3}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt3}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id4} class="wb">
@@ -207,9 +288,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc4}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt4}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
     </div>
@@ -238,9 +328,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc1}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt1}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id2} class="wb">
@@ -251,9 +350,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc2}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt2}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id3} class="wb">
@@ -263,10 +371,18 @@ function displayItems(arr) {
               <div class="textcontainer">
                 <p class="firstp">
                   ${desc3}
-                </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt3}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id4} class="wb">
@@ -277,9 +393,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc4}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt4}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id5} class="wb">
@@ -290,9 +415,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc5}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt5}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
     </div>
@@ -321,9 +455,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc1}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt1}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id2} class="wb">
@@ -334,9 +477,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc2}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt2}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id3} class="wb">
@@ -347,9 +499,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc3}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt3}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id4} class="wb">
@@ -360,9 +521,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc4}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt4}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id5} class="wb">
@@ -373,9 +543,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc5}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt5}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id6} class="wb">
@@ -386,9 +565,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc6}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt6}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
     </div>
@@ -418,9 +606,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc1}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt1}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id2} class="wb">
@@ -431,9 +628,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc2}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt2}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id3} class="wb">
@@ -444,9 +650,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc3}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt3}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id4} class="wb">
@@ -457,9 +672,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc4}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt4}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id5} class="wb">
@@ -470,9 +694,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc5}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt5}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id6} class="wb">
@@ -483,9 +716,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc6}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt6}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id7} class="wb">
@@ -496,9 +738,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc7}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt7}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
     </div>
@@ -528,9 +779,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc1}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt1}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id2} class="wb">
@@ -541,9 +801,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc2}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt2}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id3} class="wb">
@@ -554,9 +823,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc3}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt3}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id4} class="wb">
@@ -567,9 +845,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc4}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt4}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id5} class="wb">
@@ -580,9 +867,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc5}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt5}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id6} class="wb">
@@ -593,9 +889,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc6}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt6}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id7} class="wb">
@@ -606,9 +911,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc7}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt7}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
             <div id=${id8} class="wb">
@@ -619,9 +933,18 @@ function displayItems(arr) {
                 <p class="firstp">
                   ${desc8}
                 </p>
+                <div class="cont">
                 <p class="secondp">
                   ${amt8}
                 </p>
+                <div class="amount">
+                  <button class="x y">
+                  &ndash;
+                  </button>
+                  <p class="x z">0</p>
+                  <button class="x y">&plus;</button>
+                </div>
+                </div>
               </div>
             </div>
     </div>

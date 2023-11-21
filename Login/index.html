@@ -123,6 +123,11 @@
       phoneEl = document.getElementById('phone');
       emailEl = document.getElementById('email');
     }
+    //button action
+    function action() {
+      change();
+      login();
+    }
 
     //changes the display to login
     function change() {
@@ -143,7 +148,7 @@
     //check for login validity
     function login() {
       if (userEl.value == "Micheal" && pwdEl.value == '123456') {
-        location.href = '/Page2.html'
+        location.href = '/Homepage/index.html'
       }
     }
 

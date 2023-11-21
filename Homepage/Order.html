@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="Order.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css ">
+</head>
+
+<body>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      background-color: ;
+    }
+
+    .header {
+  padding: 0.9em;
+  color: white;
+  background-color: red;
+  text-align: center;
+  font-size: 0.9em;
+  display: grid;
+  grid-template-columns: 3em 1fr;
+  color: white;
+}
+
+.anchor {
+  text-decoration: none;
+  color: black;
+}
+
+.titan {
+  padding: 0 0.5em 0 0.5em;
+  margin-top: 0.6em;
+
+}
+    .firstbox {
+      width: 90%;
+      margin: auto;
+      font-size: 0.8em;
+      border-radius: 0em;
+    }
+
+    .firstgrid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background-color: dodgerblue;
+      row-gap: 0.01em;
+      column-gap: 0.01em;
+      border-radius: 2em;
+    }
+
+    .box,
+    .border,
+    .lastborder,
+    .cbox,
+    .tbox {
+      background-color: dodgerblue;
+      border: solid gold 0.05em;
+      border-bottom: none;
+      border-right: none;
+      padding-left: 1em;
+      padding: 0.8em 0 0.8em 1em;
+    }
+
+    .border {
+      border-radius: 1em 0 0 0;
+    }
+
+    .cbox {
+      border-radius: 0 0 0 1em;
+    }
+
+    .tbox {
+      border-radius: 0 1em 0 0;
+    }
+
+    .lastborder {
+      border-radius: 0 0 1em 0;
+    }
+
+    .gold {
+      color: gold;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .white {
+      color: white;
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    .btn {
+      color: white;
+      width: 5em;
+      background-color: red;
+      margin-top: 1em;
+      padding: 0.3em;
+      margin: 3em 0 0 1.5em;
+      border-radius: 0.3em;
+      font-size: 0.9em;
+    }
+
+    .p {
+      margin: 2em 0 0 0;
+      padding: 0 0 0 1.5em;
+    }
+
+    .text {
+      margin: 0.3em 0 0.3em 0;
+      font-size: 0.9em;
+    }
+
+    .digital,
+    .digitalx {
+      color: dimgrey;
+      margin-top: 1.5em;
+      background-color: white;
+      padding: 0.5em 0;
+    }
+
+    .based {
+      background-color: #ECECEC;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+    }
+
+    .productbox {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 0.2em;
+      column-gap: 0.2em;
+      padding: 0;
+    }
+
+    .img {
+      height: 70%;
+      width: 100%;
+      margin: 0;
+    }
+
+    .textcontainer {
+      padding-left: 1em;
+      background-color: white;
+      margin: 0;
+    }
+
+    .wb {
+      background-color: white;
+      margin: 0;
+    }
+
+    .firstp,
+    secondp {
+      padding: 0;
+      color: dimgrey;
+      margin: 0;
+    }
+
+    .secondp {
+      color: red;
+      padding-bottom: 0.5em;
+    }
+
+    .digitalx {
+      padding: 0.5em 0;
+    }
+    
+    a {
+      padding: 0;
+      margin: 0;
+      text-decoration-line: none;
+    }
+    
+  </style>
+  <header class="header">
+    <a class="anchor" href="index.html">
+      <i class="fa fa-angle-left" aria-hidden="true"></i>
+    </a>
+    <div class="top">
+      Information
+    </div>
+    </div>
+    
+  </header>
+  <div class="firstbox">
+    <div class="firstgrid">
+      <div class="border">
+        <p class="gold">Silver Memeber</p>
+        <p class="white"> Commision 0.3%</p>
+      </div>
+      <div class="tbox">
+        <p class="gold"> Total Principle </p>
+        <p class="white"> &#36; 4570.79</p>
+      </div>
+      <div class="box">
+        <p class="gold">Total commision today</p>
+        <p class="white">&#36; 0</p>
+      </div>
+      <div class="box">
+        <p class="gold">Account frozen amount</p>
+        <p class="white">&#36; 0</p>
+      </div>
+      <div class="cbox">
+        <p class="gold">Completed Order Today</p>
+        <p class="white">0 orders</p>
+      </div>
+      <div class="lastborder">
+        <p class="gold">Team's earning</p>
+        <p class="white">&#36; 0</p>
+      </div>
+    </div>
+  </div>
+  <div class="btn">
+    Instructions
+  </div>
+  <div class="p">
+    <p class="text">
+      1: One account can place 45 orders in one day
+    </p>
+    <p class="text">
+      2: The system is based on LBS technology and automatically
+      matches commodities through the cloud
+    </p>
+    <p class="text">
+      3: In order to prevent platform supervision, if the order is not
+      confirmed to be submitted within 5 minutes, the system will
+      freeze the order amount for 24 hours. Automatic thawing.
+    </p>
+  </div>
+</body>
+
+</html>
