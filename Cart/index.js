@@ -1,26 +1,14 @@
 const basedEl = document.querySelector('.based');
-let num1 = 12
-console.log(data);
 function displayItems(arr) {
   let display = arr.map((item)=>{
     let {heading, id1, link1, src1, desc1, amt1, id2, link2, src2, desc2, amt2, id3, link3, src3, desc3,
       amt3, id4, link4, src4, desc4, amt4, id5, link5, src5, desc5, amt5, id6, link6, src6, desc6, amt6, id7, link7, src7, desc7,
-      amt7, id8, link8, src8, desc8, amt8, num1, num2, num3, num4, num5, num6, num7, num8} = item;
+      amt7, id8, link8, src8, desc8, amt8, num1, num2, num3, num4, num5, num6, num7, num8,numid1, numid2, numid3, numid4, numid5, numid6, numid7, numid8} = item;
       
     if (item.src2 == undefined) {
       return `
       <div class="digital">
-      <span style=" 
-       height: em;
-       margin-right: 0.8em;
-       margin-left: 1.5em;
-       padding: 0em;
-       background: red;
-       width: 0.3em;
-       color: red;
-       border: solid red 0.12em;
-       
-       "> </span> ${heading}
+      <span class="allspan"> </span> ${heading}
         </div>
         <div class="productbox">
           
@@ -37,11 +25,11 @@ function displayItems(arr) {
                   ${amt1}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid1})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid1} class="x z">0</p>
+                  <button onclick='increment(${numid1})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -52,17 +40,7 @@ function displayItems(arr) {
     } else if(item.src3 == undefined) {
       return `
       <div class="digital">
-      <span style=" 
-       height: em;
-       margin-right: 0.8em;
-       margin-left: 1.5em;
-       padding: 0em;
-       background: red;
-       width: 0.3em;
-       color: red;
-       border: solid red 0.12em;
-       
-       "> </span> ${heading}
+      <span class='allspan'> </span> ${heading}
         </div>
         <div class="productbox">
             <div id=${id1} class="wb">
@@ -78,11 +56,11 @@ function displayItems(arr) {
                   ${amt1}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid1})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid1} class="x z">0</p>
+                  <button onclick='increment(${numid1})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -100,11 +78,11 @@ function displayItems(arr) {
                   ${amt2}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid2})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid2} class="x z">0</p>
+                  <button onclick='increment(${numid2})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -116,17 +94,7 @@ function displayItems(arr) {
     else if (item.src4 == undefined) {
       return `
       <div class="digital">
-      <span style=" 
-       height: em;
-       margin-right: 0.8em;
-       margin-left: 1.5em;
-       padding: 0em;
-       background: red;
-       width: 0.3em;
-       color: red;
-       border: solid red 0.12em;
-       
-       "> </span> ${heading}
+      <span class='allspan'> </span> ${heading}
         </div>
         <div class="productbox">
             <div id=${id1} class="wb">
@@ -142,11 +110,11 @@ function displayItems(arr) {
                   ${amt1}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid1})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid1} class="x z">0</p>
+                  <button onclick='increment(${numid1})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -164,11 +132,11 @@ function displayItems(arr) {
                   ${amt2}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid2})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid2} class="x z">0</p>
+                  <button onclick='increment(${numid2})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -186,11 +154,11 @@ function displayItems(arr) {
                   ${amt3}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid3})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid3} class="x z">0</p>
+                  <button onclick='increment(${numid3})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -201,17 +169,7 @@ function displayItems(arr) {
     }else if (item.src5 == undefined) {
     return `
     <div class="digital">
-      <span style=" 
-       height: em;
-       margin-right: 0.8em;
-       margin-left: 1.5em;
-       padding: 0em;
-       background: red;
-       width: 0.3em;
-       color: red;
-       border: solid red 0.12em;
-       
-       "> </span> ${heading}
+      <span class='allspan'> </span> ${heading}
         </div>
         <div class="productbox">
             <div id=${id1} class="wb">
@@ -227,11 +185,11 @@ function displayItems(arr) {
                   ${amt1}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid1})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid1} class="x z">0</p>
+                  <button onclick='increment(${numid1})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -249,11 +207,11 @@ function displayItems(arr) {
                   ${amt2}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid2})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid2} class="x z">0</p>
+                  <button onclick='increment(${numid2})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -271,11 +229,11 @@ function displayItems(arr) {
                   ${amt3}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid3})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid3} class="x z">0</p>
+                  <button onclick='increment(${numid3})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -293,11 +251,11 @@ function displayItems(arr) {
                   ${amt4}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid4})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid4} class="x z">0</p>
+                  <button onclick='increment(${numid4})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -307,17 +265,7 @@ function displayItems(arr) {
     else if (item.src6 == undefined) {
       return `
       <div class="digital">
-      <span style=" 
-       height: em;
-       margin-right: 0.8em;
-       margin-left: 1.5em;
-       padding: 0em;
-       background: red;
-       width: 0.3em;
-       color: red;
-       border: solid red 0.12em;
-       
-       "> </span> ${heading}
+      <span class='allspan'> </span> ${heading}
         </div>
         <div class="productbox">
             <div id=${id1} class="wb">
@@ -333,11 +281,11 @@ function displayItems(arr) {
                   ${amt1}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid1})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid1} class="x z">0</p>
+                  <button onclick='increment(${numid1})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -355,11 +303,11 @@ function displayItems(arr) {
                   ${amt2}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid2})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid2} class="x z">0</p>
+                  <button onclick='increment(${numid2})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -376,11 +324,11 @@ function displayItems(arr) {
                   ${amt3}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid3})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid3} class="x z">0</p>
+                  <button onclick='increment(${numid3})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -398,11 +346,11 @@ function displayItems(arr) {
                   ${amt4}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid4})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid4} class="x z">0</p>
+                  <button onclick='increment(${numid4})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -420,11 +368,11 @@ function displayItems(arr) {
                   ${amt5}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid5})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid5} class="x z">0</p>
+                  <button onclick='increment(${numid5})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -434,17 +382,7 @@ function displayItems(arr) {
     } else if (item.src7 == undefined) {
       return `
       <div class="digital">
-      <span style=" 
-       height: em;
-       margin-right: 0.8em;
-       margin-left: 1.5em;
-       padding: 0em;
-       background: red;
-       width: 0.3em;
-       color: red;
-       border: solid red 0.12em;
-       
-       "> </span> ${heading}
+      <span class='allspan'> </span> ${heading}
         </div>
         <div class="productbox">
             <div id=${id1} class="wb">
@@ -460,11 +398,11 @@ function displayItems(arr) {
                   ${amt1}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid1})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid1} class="x z">0</p>
+                  <button onclick='increment(${numid1})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -482,11 +420,11 @@ function displayItems(arr) {
                   ${amt2}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid2})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid2} class="x z">0</p>
+                  <button onclick='increment(${numid2})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -504,11 +442,11 @@ function displayItems(arr) {
                   ${amt3}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid3})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid3} class="x z">0</p>
+                  <button onclick='increment(${numid3})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -526,11 +464,11 @@ function displayItems(arr) {
                   ${amt4}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid4})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid4} class="x z">0</p>
+                  <button onclick='increment(${numid4})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -548,11 +486,11 @@ function displayItems(arr) {
                   ${amt5}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid5})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid5} class="x z">0</p>
+                  <button onclick='increment(${numid5})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -570,11 +508,11 @@ function displayItems(arr) {
                   ${amt6}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid6})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid6} class="x z">0</p>
+                  <button onclick='increment(${numid6})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -585,17 +523,7 @@ function displayItems(arr) {
     } else if (item.src8 == undefined) {
       return `
       <div class="digital">
-      <span style=" 
-       height: em;
-       margin-right: 0.8em;
-       margin-left: 1.5em;
-       padding: 0em;
-       background: red;
-       width: 0.3em;
-       color: red;
-       border: solid red 0.12em;
-       
-       "> </span> ${heading}
+      <span class='allspan'> </span> ${heading}
         </div>
         <div class="productbox">
             <div id=${id1} class="wb">
@@ -611,11 +539,11 @@ function displayItems(arr) {
                   ${amt1}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid1})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid1} class="x z">0</p>
+                  <button onclick='increment(${numid1})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -633,11 +561,11 @@ function displayItems(arr) {
                   ${amt2}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid2})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid2} class="x z">0</p>
+                  <button onclick='increment(${numid2})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -655,11 +583,11 @@ function displayItems(arr) {
                   ${amt3}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid3})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid2} class="x z">0</p>
+                  <button onclick='increment(${numid2})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -677,11 +605,11 @@ function displayItems(arr) {
                   ${amt4}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid4})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid4} class="x z">0</p>
+                  <button onclick='increment(${numid4})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -699,11 +627,11 @@ function displayItems(arr) {
                   ${amt5}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid5})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid5} class="x z">0</p>
+                  <button onclick='increment(${numid5})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -721,11 +649,11 @@ function displayItems(arr) {
                   ${amt6}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid6})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid6} class="x z">0</p>
+                  <button onclick='increment(${numid6})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -743,11 +671,11 @@ function displayItems(arr) {
                   ${amt7}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid7})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid7} class="x z">0</p>
+                  <button onclick='increment(${numid7})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -758,17 +686,7 @@ function displayItems(arr) {
     } else {
       return `
       <div class="digital">
-      <span style=" 
-       height: em;
-       margin-right: 0.8em;
-       margin-left: 1.5em;
-       padding: 0em;
-       background: red;
-       width: 0.3em;
-       color: red;
-       border: solid red 0.12em;
-       
-       "> </span> ${heading}
+      <span class='allspan'> </span> ${heading}
         </div>
         <div class="productbox">
             <div id=${id1} class="wb">
@@ -784,11 +702,11 @@ function displayItems(arr) {
                   ${amt1}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid1})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid1} class="x z">0</p>
+                  <button onclick='increment(${numid1})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -806,11 +724,11 @@ function displayItems(arr) {
                   ${amt2}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid2})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid2} class="x z">0</p>
+                  <button onclick='increment(${numid2})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -828,11 +746,11 @@ function displayItems(arr) {
                   ${amt3}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid3})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid3} class="x z">0</p>
+                  <button onclick='increment(${numid3})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -850,11 +768,11 @@ function displayItems(arr) {
                   ${amt4}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid4})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid4} class="x z">0</p>
+                  <button onclick='increment(${numid4})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -872,11 +790,11 @@ function displayItems(arr) {
                   ${amt5}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid5})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid5} class="x z">0</p>
+                  <button onclick='increment(${numid5})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -894,11 +812,11 @@ function displayItems(arr) {
                   ${amt6}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid6})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid6} class="x z">0</p>
+                  <button onclick='increment(${numid6})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -916,11 +834,11 @@ function displayItems(arr) {
                   ${amt7}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid7})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid7} class="x z">0</p>
+                  <button onclick='increment(${numid7})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -938,11 +856,11 @@ function displayItems(arr) {
                   ${amt8}
                 </p>
                 <div class="amount">
-                  <button class="x y">
+                  <button onclick='decrement(${numid8})' class="x y">
                   &ndash;
                   </button>
-                  <p class="x z">0</p>
-                  <button class="x y">&plus;</button>
+                  <p id=${numid8} class="x z">0</p>
+                  <button onclick='increment(${numid8})' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -957,4 +875,3 @@ function displayItems(arr) {
 
 displayItems(data);
 
-//console.log(basedEl);

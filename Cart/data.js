@@ -74,6 +74,14 @@ const data = [
     num6: "num6",
     num7: "num7",
     num8: "num8",
+    numid1: "digitalid1",
+    numid2: "digitalid2",
+    numid3: "digitalid3",
+    numid4: "digitalid4",
+    numid5: "digitalid5",
+    numid6: "digitalid6",
+    numid7: "digitalid7",
+    numid8: "digitalid8"
   },
   /*** Fall Ship ***/
   {
@@ -87,6 +95,7 @@ const data = [
     award1: "5",
     details1: "ROAST: Take your pick; A mix of roasts from light to dark. <br> FLAVOR PROFILE: Morning Blend: Mild and satisfying with a subtle kick, striking a perfect balance between the quiet you want and the jolt you know you need to get moving in the morning; Donut Shop Blend: this classic brew is sweet and smooth, striking the perfect balance between mellow and bold, to deliver just enough bite to brighten your day; 100% Colombian: Lively and bright, starting rich and warmly aromatic—but landing softly with its mild acidity; French Roast: A velvety body with a soft, smoky flavor; intensely rich but always smooth <br> 100% Gluten Free & Non-GMO: Our coffee products do not contain gluten or genetically modified ingredients <br> BRAND STORY: Since 1979 Victor Allen has been proud to bring you high-quality, roaster-fresh perfection. We source 100% Arabica beans from all over the world and use precision roasting techniques to guarantee the very best coffee <br> INGREDIENTS: 100% Arabica coffee <br> CAFFEINE CONTENT: Victor Allen's coffees range from 90-150 mgs per serving <br> SELECTION: Victor Allen's offers a wide selection of beverage choices from light, medium and dark roasts to everyday and seasonal flavors, in bagged, single serve and ready to drink formats. <br> HOW TO BREW RECOMMENDATIONS: STEP ONE: load your single serve cup into your brewer. STEP TWO: select the 8-floz setting on your brewer for the best taste. STEP THREE: to prevent dripping upon completion of brewing carefully tilt the single serve cup upon removal from your brewer. STEP FOUR: Enjoy your precision roasted Victor Allen's Coffee. <br> COMPATIBILITY: For use in all single serve brewing systems, including Keurig 2.0. Single Serve coffee pods for Keurig K-Cup Brewers. Keurig is a registered trademark of KEURIG GREEN MOUNTAIN, INC. K-Cups is a registered trademark of KEURIG GREEN MOUNTAIN, INC.",
     num1: "num1",
+    numid1: "fallid1",
   },
     /*Household Essentials*/
   {
@@ -203,6 +212,15 @@ STAY DRY. Made with DryVent performance tech and coated with a Durable Water-Rep
     num6: "num6",
     num7: "num7",
     num8: "num8",
+    numid1: "houseid1",
+    numid2: "houseid2",
+    numid3: "houseid3",
+    numid4: "houseid4",
+    numid5: "houseid5",
+    numid6: "houseid6",
+    numid7: "houseid7",
+    numid8: "houseid8"
+
   },
   /*Autos and Tyres*/
   {
@@ -309,6 +327,12 @@ Adult Rider Max Weight: 275 lbs
     num4: "num4",
     num5: "num5",
     num6: "num6",
+    numid1: "autoid1",
+    numid2: "autoid2",
+    numid3: "autoid3",
+    numid4: "autoid4",
+    numid5: "autoid5",
+    numid6: "autoid6",
   },
   /*Office and School Supplies*/
   {
@@ -349,6 +373,9 @@ Easyfashion 2pcs Upholstered Office Chair with High Back, Black
     num1: "num1",
     num2: "num2",
     num3: "num3",
+    numid1: "officeid1",
+    numid2: "officeid2",
+    numid3: "officeid3",
   },
   /* Beauty*/
   {
@@ -405,6 +432,10 @@ Replaceable OneBlade lasts up to 4 months*. (*For best shaving experience. Based
     num2: "num2",
     num3: "num3",
     num4: "num4",
+    numid1: "beautyid1",
+    numid2: "beautyid2",
+    numid3: "beautyid3",
+    numid4: "beautyid4",
   },
   /*Kids*/
   {
@@ -434,6 +465,8 @@ The 6-wheel tractor features a dump bed,working shovel and lockable tailgate.Uni
     amt2: "&#36;788.0",
     num1: "num1",
     num2: "num2",
+    numid1: "kidid1",
+    numid2: "kidid2"
   },
   /* Home, Futniture & Appliances */ 
   {
@@ -538,6 +571,12 @@ TrueDetect Stays on Task and Out of Trouble. With the advanced TrueDetect 3D tec
     num4: "num4",
     num5: "num5",
     num6: "num6",
+    numid1: "homeid1",
+    numid2: "homeid2",
+    numid3: "homeid3",
+    numid4: "homeid4",
+    numid5: "homeid5",
+    numid6: "homeid6",
   },
   /*Patio & Garden*/
   {
@@ -591,7 +630,11 @@ Next year when it's time to hit the back yard here are a few ways to keep your f
     num2: "num2",
     num3: "num3",
     num4: "num4",
-  },
+    numid1: "patioid1",
+    numid2: "patioid2",
+    numid3: "patioid3",
+    numid4: "patioid4",
+    },
   /* Clothing, Shoes & Accesories */
   {
     heading: "Clothing, Shoes & Accessories",
@@ -660,7 +703,11 @@ EASY WASH: The French beret can be hand washed when needed. Dipping the beret in
     num2: "num2",
     num3: "num3",
     num4: "num4",
-  },
+    numid1: "clothid1",
+    numid2: "clothid2",
+    numid3: "clothid3",
+    numid4: "clothid4",
+    },
   /* Women Product */
   {
     heading: "Women Product",
@@ -760,6 +807,12 @@ Please refer to size measurement in the last item picture before ordering
     num4: "num4",
     num5: "num5",
     num6: "num6",
+    numid1: "womenid1",
+    numid2: "womenid2",
+    numid3: "womenid3",
+    numid4: "womenid4",
+    numid5: "womenid5",
+    numid6: "womenid6",
   },
   /* Electronics */
   {
@@ -826,6 +879,10 @@ Please refer to size measurement in the last item picture before ordering
     num2: "num2",
     num3: "num3",
     num4: "num4",
+    numid1: "electronicid1",
+    numid2: "electronicid2",
+    numid3: "electronicid3",
+    numid4: "electronicid4",
   },
   /*Luxury*/
   {
@@ -964,6 +1021,15 @@ We provide a 60-day MONEY-BACK GUARANTEE, no questions asked. The customer is re
     num6: "num6",
     num7: "num7",
     num8: "num8",
+    numid1: "luxuryid1",
+    numid2: "luxuryid2",
+    numid3: "luxuryid3",
+    numid4: "luxuryid4",
+    numid5: "luxuryid5",
+    numid6: "luxuryid6",
+    numid7: "luxuryid7",
+    numid8: "luxuryid8"
+
 
   },
   /* Home Improvement */
@@ -1079,6 +1145,12 @@ Power Failure Auto Restart
     num4: "num4",
     num5: "num5",
     num6: "num6",
+    numid1: "homeimproveid1",
+    numid2: "homeimproveid2",
+    numid3: "homeimproveid3",
+    numid4: "homeimproveid4",
+    numid5: "homeimproveid5",
+    numid6: "homeimproveid6",
   },
   /* Art, Craft & Sewing */
   {
@@ -1153,6 +1225,10 @@ Slight color variation may occur
     num2: "num2",
     num3: "num3",
     num4: "num4",
+    numid1: "artid1",
+    numid2: "artid2",
+    numid3: "artid3",
+    numid4: "artid4",
   },
   /* Luxury Clothing */
   {
@@ -1283,6 +1359,15 @@ Wash Recommended With Cold Water/Do Not Bleach/Hang Or Line Dry/Wash with like c
     num6: "num6",
     num7: "num7",
     num8: "num8",
+    numid1: "luxid1",
+    numid2: "luxid2",
+    numid3: "luxid3",
+    numid4: "luxid4",
+    numid5: "luxid5",
+    numid6: "luxid6",
+    numid7: "luxid7",
+    numid8: "luxid8"
+    
   },
   ];
   /*
