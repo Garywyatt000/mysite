@@ -1,4 +1,4 @@
-let basket = [];
+let basket = JSON.parse(localStorage.getItem('data')) || [];
 
 function increment(id) {
   let selecteditem = id;
@@ -11,7 +11,9 @@ function increment(id) {
   } else {
     search.item += 1;
   }
+  localStorage.setItem('data', JSON.stringify(basket));
   update(selecteditem.id);
+  console.log(check);
 }
 
 function decrement(id) {
@@ -24,6 +26,7 @@ function decrement(id) {
   }else {
     search.item -= 1;
   }
+  localStorage.setItem('data', JSON.stringify(basket));
   update(selecteditem.id);
   }
 
@@ -35,8 +38,6 @@ function update(id) {
 
 
 function calculate() {
-  let y = basket.map((x)=> {
-    (x.item);
-  }).reduce((x,y)=> { x+y, 0})
-  document.getElementById('itemnum').textContent = y;
+  let amt = document.getElementById('itemnum');
+  amt.textContent = basket.map((x) => x.item).reduce((x,y) => x+y, 0);
 }

@@ -92,7 +92,12 @@ body {
   
 .grid {
   display: grid;
-  grid-template-columns: 1.7fr 1fr;
+  grid-template-columns: 1.4fr 1fr 1fr;
+}
+
+.textgrid {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr
 }
 
 .order, .zero {
@@ -107,7 +112,28 @@ body {
 }
 
 .zero {
-  padding-left: 4.7em;
+  padding-left: 1.7em;
+}
+
+.cart-basket {
+  padding-left: 4em;
+  position: relative;
+}
+
+.item-num {
+  position: absolute;
+  top: -0.5em;
+  right: 1.2em;
+  font-weight: bold;
+  color: red;
+  background-color: white;
+  padding: 0.1em;
+  margin-bottom: 0.3em;
+  border-radius: 50%;
+}
+
+.shopping-cart {
+  font-size: 0.8em;
 }
 
 .data, .asset {
