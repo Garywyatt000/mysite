@@ -1,0 +1,186 @@
+body {
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.all {
+  margin: auto;
+  width: 18em;
+}
+
+.box {
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.container {
+  margin: auto;
+  width: 12em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.checkout, .clear, .homebtn {
+  background-color: green;
+  color: white;
+  font-size: 0.8em;
+  height: 2.5em;
+  border-radius: 0.5em;
+}
+
+.clear {
+  background-color: red;
+}
+
+.stuff {
+  border: solid dimgrey;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  position: relative;
+  margin-bottom: 0.7em;
+  border-radius: 0.5em;
+  width: 80%;
+  margin: auto;
+  margin-top: 1em;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+}
+
+.row1, .row2, .row3 {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 3em;
+}
+
+.minus, .plus {
+  width: 1.5em;
+  background-color: transparent;
+  color: black;
+}
+
+.minus {
+  padding-left: 1em;
+}
+
+.items {
+  margin-top: 1em;
+}
+
+.price {
+  margin-left: 0.4em;
+  background-color: black;
+  color: white;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  padding-bottom: 0.15em;
+  padding-top: 0.2em;;
+  font-size: 0.9em;
+  border-radius: 0.2em;
+}
+
+.p {
+  position: absolute;
+  top: 0;
+  right: 0em;
+  color: red;
+  font-size: 1.3em;
+  padding: auto;
+  width: 1.5em;
+  height: 1.5em; 
+  background-color: white;
+}
+
+.pic {
+  width: 5em;
+}
+
+.header {
+  padding: 0.9em;
+  color: white;
+  background-color: red;
+  text-align: center;
+  font-size: 1em;
+  display: grid;
+  grid-template-columns: 3em 3fr 1fr;
+  color: white;
+}
+
+.anchor {
+  text-decoration: none;
+  color: black;
+}
+
+
+.titan {
+  padding: 0 0.5em 0 0.5em;
+  margin-top: 0.6em;
+}
+
+.empty {
+  text-align: center;
+}
+
+.homebtn {
+  background-color: black;
+  color: white;
+}
+
+.cart-basket {
+  position: relative;
+}
+
+.item-num {
+  font-size: 1em;
+  position: absolute;
+  top: -0.5em;
+  right: 1em;
+  font-weight: bold;
+  color: red;
+  background-color: white;
+  padding: 0.1em;
+  margin-bottom: 0.3em;
+  border-radius: 50%;
+}
+
+.shopping-cart {
+  
+}
+
+.fa-shopping-cart {
+  color: #340986;
+  font-size: 1.3em;
+}
+
+.x {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: white;
+}
+
+.y {
+  color: grey;
+  font-size: 1.2em;
+  margin-top: -0.3em;
+}
+
+.z {
+  font-weight: 700;
+}

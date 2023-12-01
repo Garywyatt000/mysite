@@ -1,19 +1,22 @@
 let basket = JSON.parse(localStorage.getItem('data')) || [];
 
-function increment(id) {
+function increment(id, price, src, name, numid) {
   let selecteditem = id;
   let search = basket.find((x)=> x.id === selecteditem.id);
   if (search === undefined) {
     basket.push({
       id: selecteditem.id,
+      amt: price,
+      name,
+      src,
       item: 1,
+      numid: numid
     });
   } else {
     search.item += 1;
   }
-  localStorage.setItem('data', JSON.stringify(basket));
   update(selecteditem.id);
-  console.log(check);
+  localStorage.setItem('data', JSON.stringify(basket));
 }
 
 function decrement(id) {
@@ -26,8 +29,9 @@ function decrement(id) {
   }else {
     search.item -= 1;
   }
-  localStorage.setItem('data', JSON.stringify(basket));
   update(selecteditem.id);
+  basket = basket.filter((x) => x.item !== 0);
+  localStorage.setItem('data', JSON.stringify(basket));
   }
 
 function update(id) {
@@ -39,5 +43,9 @@ function update(id) {
 
 function calculate() {
   let amt = document.getElementById('itemnum');
-  amt.textContent = basket.map((x) => x.item).reduce((x,y) => x+y, 0);
+  sum = basket.map((x) => x.item ).reduce((x,y) => x+y, 0);
+  localStorage.setItem('sum', JSON.stringify(sum));
+  amt.textContent = JSON.parse(localStorage.getItem('sum'));
 }
+
+window.addEventListener('DOMContentLoaded', calculate())

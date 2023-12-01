@@ -3,7 +3,8 @@ function displayItems(arr) {
   let display = arr.map((item)=>{
   let {heading, id1, link1, src1, desc1, amt1, id2, link2, src2, desc2, amt2, id3, link3, src3, desc3,
     amt3, id4, link4, src4, desc4, amt4, id5, link5, src5, desc5, amt5, id6, link6, src6, desc6, amt6, id7, link7, src7, desc7,
-    amt7, id8, link8, src8, desc8, amt8, num1, num2, num3, num4, num5, num6, num7, num8, numid1, numid2, numid3, numid4, numid5, numid6, numid7, numid8} = item;
+    amt7, id8, link8, src8, desc8, amt8, num1, num2, num3, num4, num5, num6, num7, num8, numid1, numid2, numid3, numid4, numid5, numid6, numid7, numid8, name1, name2, name3, name4, name5, name6, name7, name8
+  } = item;
     
   let check1 = basket.find((x) => x.id === numid1) || [];
   let check2 = basket.find((x) => x.id === numid2) || [];
@@ -22,7 +23,7 @@ function displayItems(arr) {
         </div>
         <div class="productbox">
           
-            <div id=${num1} class="wb">
+            <div id=${id1} class="wb">
             <a href='item.html?num=${id1}&sort=${num1}'>
               <img id=${num1} data-num${num1}=${num1}  class="img" src=${src1} alt="x">
               </a>
@@ -39,7 +40,7 @@ function displayItems(arr) {
                   &ndash;
                   </button>
                   <p id=${numid1} class="x z">${check1.item === undefined ? 0 : check1.item}</p>
-                  <button onclick='increment(${numid1})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid1}, "${amt1}", "${src1}", "${name1}", "${num1}")' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -72,7 +73,7 @@ function displayItems(arr) {
                   <p id=${numid1} class="x z">
                   ${check1.item === undefined ? 0 : check1.item}
                   </p>
-                  <button onclick='increment(${numid1})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid1}, "${amt1}", "${src1}", "${name1}" )' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -96,7 +97,7 @@ function displayItems(arr) {
                   <p id=${numid2} class="x z">
                   ${check2.item === undefined ? 0 : check2.item}
                   </p>
-                  <button onclick='increment(${numid2})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid2}, "${amt2}", "${src2}", "${name2}", "${num2}")' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -130,7 +131,7 @@ function displayItems(arr) {
                   <p id=${numid1} class="x z">
                   ${check1.item === undefined ? 0 : check1.item}
                   </p>
-                  <button onclick='increment(${numid1})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid1},  "${amt1}", "${src1}", "${name1}", "${num1}")' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -154,7 +155,7 @@ function displayItems(arr) {
                   <p id=${numid2} class="x z">
                   ${check2.item === undefined ? 0 : check2.item}
                   </p>
-                  <button onclick='increment(${numid2})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid2},  "${amt2}", "${src2}", ${num2}, "${name2}")' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -178,7 +179,7 @@ function displayItems(arr) {
                   <p id=${numid3} class="x z">
                   ${check3.item === undefined ? 0 : check3.item}
                   </p>
-                  <button onclick='increment(${numid3})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid3}, "${amt3}", "${src3}", "${name3}", "${num3}")' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -211,7 +212,7 @@ function displayItems(arr) {
                   <p id=${numid1} class="x z">
                   ${check1.item === undefined ? 0 : check1.item}
                   </p>
-                  <button onclick='increment(${numid1})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid1}, "${amt1}", "${src1}", "${name1}", "${num1}" )' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -235,7 +236,7 @@ function displayItems(arr) {
                   <p id=${numid2} class="x z">
                   ${check2.item === undefined ? 0 : check2.item}
                   </p>
-                  <button onclick='increment(${numid2})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid2}, "${amt2}", "${src2}", "${name2}", "${num2}"  )' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -259,7 +260,7 @@ function displayItems(arr) {
                   <p id=${numid3} class="x z">
                   ${check3.item === undefined ? 0 : check3.item}
                   </p>
-                  <button onclick='increment(${numid3})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid3}, "${amt3}", "${src3}", "${name3}", ${num3} )' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -283,7 +284,7 @@ function displayItems(arr) {
                   <p id=${numid4} class="x z">
                   ${check4.item === undefined ? 0 : check4.item}
                   </p>
-                  <button onclick='increment(${numid4})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid4}, "${amt4}", "${src4}", "${name4}", "${num4}")' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -315,7 +316,7 @@ function displayItems(arr) {
                   <p id=${numid1} class="x z">
                   ${check1.item === undefined ? 0 : check1.item}
                   </p>
-                  <button onclick='increment(${numid1})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid1},  "${amt1}", "${src1}", "${name1}", "${num1}" )' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -339,7 +340,7 @@ function displayItems(arr) {
                   <p id=${numid2} class="x z">
                   ${check2.item === undefined ? 0 : check2.item}
                   </p>
-                  <button onclick='increment(${numid2})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid2}, "${amt2}", "${src2}", "${name2}", "${num2}" )' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -362,7 +363,7 @@ function displayItems(arr) {
                   <p id=${numid3} class="x z">
                   ${check3.item === undefined ? 0 : check3.item}
                   </p>
-                  <button onclick='increment(${numid3})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid3}, "${amt3}", "${src3}", "${name3}", "${num3}" )' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -386,7 +387,7 @@ function displayItems(arr) {
                   <p id=${numid4} class="x z">
                   ${check4.item === undefined ? 0 : check4.item}
                   </p>
-                  <button onclick='increment(${numid4})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid4}, "${amt4}", "${src4}", "${name4}", "${num4}" )' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -410,7 +411,7 @@ function displayItems(arr) {
                   <p id=${numid5} class="x z">
                   ${check5.item === undefined ? 0 : check5.item}
                   </p>
-                  <button onclick='increment(${numid5})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid5}, "${amt5}", "${src5}", "${name5}", "${num5}" )' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -442,7 +443,7 @@ function displayItems(arr) {
                   <p id=${numid1} class="x z">
                   ${check1.item === undefined ? 0 : check1.item}
                   </p>
-                  <button onclick='increment(${numid1})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid1},  "${amt1}", "${src1}", "${name1}", "${num1}" )' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -466,7 +467,7 @@ function displayItems(arr) {
                   <p id=${numid2} class="x z">
                   ${check2.item === undefined ? 0 : check2.item}
                   </p>
-                  <button onclick='increment(${numid2})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid2},  "${amt2}", "${src2}", "${name2}", "${num2}" )' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -490,7 +491,7 @@ function displayItems(arr) {
                   <p id=${numid3} class="x z">
                   ${check3.item === undefined ? 0 : check3.item}
                   </p>
-                  <button onclick='increment(${numid3})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid3}, "${amt3}", "${src3}", "${name3}", "${num3}" )' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -514,7 +515,7 @@ function displayItems(arr) {
                   <p id=${numid4} class="x z">
                   ${check4.item === undefined ? 0 : check4.item}
                   </p>
-                  <button onclick='increment(${numid4})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid4},  "${amt4}", "${src4}", "${name4}", "${num4}" )' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -538,7 +539,7 @@ function displayItems(arr) {
                   <p id=${numid5} class="x z">
                   ${check5.item === undefined ? 0 : check5.item}
                   </p>
-                  <button onclick='increment(${numid5})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid5}, "${amt5}", "${src5}", "${name5}", "${num5}")' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -562,7 +563,7 @@ function displayItems(arr) {
                   <p id=${numid6} class="x z">
                   ${check6.item === undefined ? 0 : check6.item}
                   </p>
-                  <button onclick='increment(${numid6})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid6},  "${amt6}", "${src6}", "${name6}", "${num6}" )' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -595,7 +596,7 @@ function displayItems(arr) {
                   <p id=${numid1} class="x z">
                   ${check1.item === undefined ? 0 : check1.item}
                   </p>
-                  <button onclick='increment(${numid1})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid1}, "${amt1}", "${src1}", "${name1}", "${num1}"  )' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -619,7 +620,7 @@ function displayItems(arr) {
                   <p id=${numid2} class="x z">
                   ${check2.item === undefined ? 0 : check2.item}
                   </p>
-                  <button onclick='increment(${numid2})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid2}, "${amt2}", "${src2}", "${name2}", "${num2}"  )' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -643,7 +644,7 @@ function displayItems(arr) {
                   <p id=${numid3} class="x z">
                   ${check3.item === undefined ? 0 : check3.item}
                   </p>
-                  <button onclick='increment(${numid3})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid3}, "${amt3}", "${src3}", "${name3}", "${num3}"  )' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -667,7 +668,7 @@ function displayItems(arr) {
                   <p id=${numid4} class="x z">
                   ${check4.item === undefined ? 0 : check4.item}
                   </p>
-                  <button onclick='increment(${numid4})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid4}, "${amt4}", "${src4}", "${name4}", "${num4}" )' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -691,7 +692,7 @@ function displayItems(arr) {
                   <p id=${numid5} class="x z">
                   ${check5.item === undefined ? 0 : check5.item}
                   </p>
-                  <button onclick='increment(${numid5})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid5},  "${amt5}", "${src5}", "${name5}", "${num5}" )' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -715,7 +716,7 @@ function displayItems(arr) {
                   <p id=${numid6} class="x z">
                   ${check6.item === undefined ? 0 : check6.item}
                   </p>
-                  <button onclick='increment(${numid6})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid6},  "${amt6}", "${src6}", "${name6}", "${num6}"  )' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -739,7 +740,7 @@ function displayItems(arr) {
                   <p id=${numid7} class="x z">
                   ${check7.item === undefined ? 0 : check7.item}
                   </p>
-                  <button onclick='increment(${numid7})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid7}  "${amt7}", "${src7}", "${name7}", "${num7}" )' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -772,7 +773,7 @@ function displayItems(arr) {
                   <p id=${numid1} class="x z">
                   ${check1.item === undefined ? 0 : check1.item}
                   </p>
-                  <button onclick='increment(${numid1})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid1}, "${amt1}", "${src1}", "${name1}", "${num1}" )' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -796,7 +797,7 @@ function displayItems(arr) {
                   <p id=${numid2} class="x z">
                   ${check2.item === undefined ? 0 : check2.item}
                   </p>
-                  <button onclick='increment(${numid2})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid2},  "${amt2}", "${src2}", "${name2}", "${num2}" )' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -820,7 +821,7 @@ function displayItems(arr) {
                   <p id=${numid3} class="x z">
                   ${check3.item === undefined ? 0 : check3.item}
                   </p>
-                  <button onclick='increment(${numid3})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid3},  "${amt3}", "${src3}", "${name3}", "${num3}")' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -844,7 +845,7 @@ function displayItems(arr) {
                   <p id=${numid4} class="x z">
                   ${check4.item === undefined ? 0 : check4.item}
                   </p>
-                  <button onclick='increment(${numid4})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid4}, "${amt4}", "${src4}", "${name4}", "${num4}" )' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -868,7 +869,7 @@ function displayItems(arr) {
                   <p id=${numid5} class="x z">
                   ${check5.item === undefined ? 0 : check5.item}
                   </p>
-                  <button onclick='increment(${numid5})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid5},  "${amt5}", "${src5}", "${name5}", "${num5}")' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -892,7 +893,7 @@ function displayItems(arr) {
                   <p id=${numid6} class="x z">
                   ${check6.item === undefined ? 0 : check6.item}
                   </p>
-                  <button onclick='increment(${numid6})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid6}, "${amt6}", "${src6}", "${name6}", "${num6}" )' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -916,7 +917,7 @@ function displayItems(arr) {
                   <p id=${numid7} class="x z">
                   ${check7.item === undefined ? 0 : check7.item}
                   </p>
-                  <button onclick='increment(${numid7})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid7}, "${amt7}", "${src7}",  "${name7}", "${num7}")' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
@@ -940,7 +941,7 @@ function displayItems(arr) {
                   <p id=${numid8} class="x z">
                   ${check8.item === undefined ? 0 : check8.item}
                   </p>
-                  <button onclick='increment(${numid8})' class="x y">&plus;</button>
+                  <button onclick='increment(${numid8},  "${amt8}", "${src8}", "${name8}", "${num8}")' class="x y">&plus;</button>
                 </div>
                 </div>
               </div>
