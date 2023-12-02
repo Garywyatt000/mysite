@@ -25,7 +25,7 @@ function generateCart() {
       let {amt, id, item, name, src, num, numid} = x;
       let newamt = amt.substring(1);
       
-      let result = newamt * item;
+      let result = ((newamt*100) * item)/100;
       return `
       <div class="stuff">
       <div class="img">
@@ -41,7 +41,7 @@ function generateCart() {
           <button onclick='increment(${numid},  "${amt}", "${src}",  "${name}", "${numid}" )' class="x y plus"> + </button>
         </div>
         <h3 class="row3">
-          ${Number(result)}
+          ${result}
         </h3>
       </div>
       <button id='${name}' onclick='cancel(${name})' class="p">x</button>
@@ -77,7 +77,6 @@ function calculate() {
 window.addEventListener('DOMContentLoaded', calculate());
 
 function increment(id, price, src, name, numid) {
-  console.log(numid);
   let selecteditem = id;
   let search = basket.find((x)=> x.id === selecteditem.id);
   if (search === undefined) {
@@ -93,6 +92,7 @@ function increment(id, price, src, name, numid) {
     search.item += 1;
   }
   update(selecteditem.id);
+  generateCart();
   localStorage.setItem('data', JSON.stringify(basket));
 }
 
@@ -121,9 +121,7 @@ function update(id) {
 function cancel(event) {
   let y = event.previousElementSibling;
   let id = event.previousElementSibling.lastElementChild.previousElementSibling.children[1].id;
-  console.log(id);
   let search = basket.find((x) => x.id === id );
-  console.log(search);
   search.item = 0;
   update(id);
   basket = basket.filter((x) => x.item !== 0);
