@@ -16,7 +16,7 @@ function generateCart() {
       <button class="checkout">
         Checkout
       </button>
-      <button class="clear">
+      <button onclick='clearcart()' class="clear">
         Clear Cart
       </button>
     </div>
@@ -38,13 +38,13 @@ function generateCart() {
         <div class="row2">
           <button onclick='decrement(${numid})' class="x y minus"> &ndash; </button>
           <div id=${numid} class="x z">${item}</div>
-          <button onclick='increment(${numid},  "${amt}", "${src}",  "${name}", "${num}" )' class="x y plus"> + </button>
+          <button onclick='increment(${numid},  "${amt}", "${src}",  "${name}", "${numid}" )' class="x y plus"> + </button>
         </div>
         <h3 class="row3">
           ${Number(result)}
         </h3>
       </div>
-      <button class="p">x</button>
+      <button id='${name}' onclick='cancel(${name})' class="p">x</button>
     </div>
       `
     })
@@ -77,6 +77,7 @@ function calculate() {
 window.addEventListener('DOMContentLoaded', calculate());
 
 function increment(id, price, src, name, numid) {
+  console.log(numid);
   let selecteditem = id;
   let search = basket.find((x)=> x.id === selecteditem.id);
   if (search === undefined) {
@@ -107,6 +108,7 @@ function decrement(id) {
   }
   update(selecteditem.id);
   basket = basket.filter((x) => x.item !== 0);
+  generateCart();
   localStorage.setItem('data', JSON.stringify(basket));
   }
 
@@ -116,6 +118,31 @@ function update(id) {
   calculate();
 }
 
+function cancel(event) {
+  let y = event.previousElementSibling;
+  let id = event.previousElementSibling.lastElementChild.previousElementSibling.children[1].id;
+  console.log(id);
+  let search = basket.find((x) => x.id === id );
+  console.log(search);
+  search.item = 0;
+  update(id);
+  basket = basket.filter((x) => x.item !== 0);
+  generateCart();
+  localStorage.setItem('data', JSON.stringify(basket));
+}
+
+function clearcart() {
+  basket.map((x) => {
+    x.item = 0;
+  })
+  itemnum.textContent = 0;
+  basket = basket.filter((x) => x.item !== 0);
+  generateCart();
+  localStorage.setItem('data', JSON.stringify(basket));
+
+}
+
+//console.log(basket);
 
 
 

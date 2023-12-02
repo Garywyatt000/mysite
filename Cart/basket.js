@@ -48,4 +48,5 @@ function calculate() {
   amt.textContent = JSON.parse(localStorage.getItem('sum'));
 }
 
-window.addEventListener('DOMContentLoaded', calculate())
+window.addEventListener('DOMContentLoaded', calculate());
+
