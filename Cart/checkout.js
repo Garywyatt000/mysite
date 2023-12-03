@@ -44,7 +44,7 @@ function generateCart() {
           ${result}
         </h3>
       </div>
-      <button id='${name}' onclick='cancel(${name})' class="p">x</button>
+      <button id='' onclick='cancel(${numid})' class="p">x</button>
     </div>
       `
     })
@@ -118,12 +118,12 @@ function update(id) {
   calculate();
 }
 
-function cancel(event) {
-  let y = event.previousElementSibling;
-  let id = event.previousElementSibling.lastElementChild.previousElementSibling.children[1].id;
-  let search = basket.find((x) => x.id === id );
+function cancel(y) {
+  let selecteditem = y.id;
+  //search basket for item having the same id
+  let search = basket.find((x)=> x.id === selecteditem);
   search.item = 0;
-  update(id);
+  update(selecteditem);
   basket = basket.filter((x) => x.item !== 0);
   generateCart();
   localStorage.setItem('data', JSON.stringify(basket));
