@@ -6,14 +6,18 @@ let itemdiv = document.getElementById('itemdiv');
 
 let itemnum = document.getElementById('itemnum');
 
+let totalEl = document.getElementById('totaldiv');
+
+let commision = 0;
+
 function generateCart() {
   if(basket.length !== 0) {
     topdiv.innerHTML = `
-     <div class="box">
+     <div id='totaldiv' class="box">
       Total Bill : $ 1000
     </div>
     <div class="container">
-      <button class="checkout">
+      <button onclick='checkOut()' class="checkout">
         Checkout
       </button>
       <button onclick='clearcart()' class="clear">
@@ -25,7 +29,7 @@ function generateCart() {
       let {amt, id, item, name, src, num, numid} = x;
       let newamt = amt.substring(1);
       
-      let result = ((newamt*100) * item)/100;
+      let result = ((newamt*1000) * item)/1000;
       return `
       <div class="stuff">
       <div class="img">
@@ -41,7 +45,7 @@ function generateCart() {
           <button onclick='increment(${numid},  "${amt}", "${src}",  "${name}", "${numid}" )' class="x y plus"> + </button>
         </div>
         <h3 class="row3">
-          ${result}
+          $ ${result}
         </h3>
       </div>
       <button id='' onclick='cancel(${numid})' class="p">x</button>
@@ -65,16 +69,21 @@ function generateCart() {
       }
 }
 
-generateCart();
+
 
 function calculate() {
   let amt = document.getElementById('itemnum');
   sum = basket.map((x) => x.item ).reduce((x,y) => x+y, 0);
   localStorage.setItem('sum', JSON.stringify(sum));
   amt.textContent = JSON.parse(localStorage.getItem('sum'));
+  
 }
 
-window.addEventListener('DOMContentLoaded', calculate());
+window.addEventListener('DOMContentLoaded', function() {
+  generateCart();
+  calculate();
+  sumAmt();
+} );
 
 function increment(id, price, src, name, numid) {
   let selecteditem = id;
@@ -93,6 +102,7 @@ function increment(id, price, src, name, numid) {
   }
   update(selecteditem.id);
   generateCart();
+  sumAmt();
   localStorage.setItem('data', JSON.stringify(basket));
 }
 
@@ -109,6 +119,7 @@ function decrement(id) {
   update(selecteditem.id);
   basket = basket.filter((x) => x.item !== 0);
   generateCart();
+  sumAmt();
   localStorage.setItem('data', JSON.stringify(basket));
   }
 
@@ -139,6 +150,26 @@ function clearcart() {
   localStorage.setItem('data', JSON.stringify(basket));
 
 }
+
+function checkOut() {
+  sumAmt();
+}
+
+function sumAmt() {
+  let sum = basket.map((x) => {
+    let totaldiv = document.getElementById('totaldiv');
+    let {amt, id, item, name, src, num, numid} = x;
+      let newamt = amt.substring(1);
+      
+      let result = ((newamt*1000) * item)/1000;
+      
+    return result;
+  });
+  let p = sum.reduce((y, z) => y+z, 0);
+  let totalSum = p.toFixed(1);
+  totaldiv.textContent = `Total Bill : $ ${totalSum}`;
+}
+
 
 //console.log(basket);
 
