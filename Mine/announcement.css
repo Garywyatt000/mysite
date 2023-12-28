@@ -11,6 +11,7 @@ body {
   display: grid;
   grid-template-columns: 3em 1fr;
   color: white;
+  font-size: 0.85em;
 }
 
 .anchor {
@@ -59,4 +60,5 @@ body {
 
 .bell, .notification {
   margin-top: 0.7em;
+  font-size: 0.85em;
 }

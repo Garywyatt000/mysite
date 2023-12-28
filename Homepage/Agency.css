@@ -8,7 +8,7 @@ body {
   color: white;
   background-color: red;
   text-align: center;
-  font-size: 0.9em;
+  font-size: 0.8em;
   display: grid;
   grid-template-columns: 3em 1fr;
   color: white;
@@ -17,9 +17,12 @@ body {
 .anchor {
   text-decoration: none;
   color: black;
+  
 }
 
 .titan {
   padding: 0 0.5em 0 0.5em;
   margin-top: 0.6em;
+  font-size: 0.8em;
+  font-family: serif;
 }

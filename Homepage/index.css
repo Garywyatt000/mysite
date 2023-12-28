@@ -1,7 +1,7 @@
 body {
   background-color: white;
   align-items: center;
-  padding-bottom: 3em;
+  padding-bottom: 5em;
 }
 
 .fixed {
@@ -15,8 +15,14 @@ body {
   left: 0;
   right: 0;
   background-color: white;
+  font-size: 0.8em;
 } 
 
+.recharge, .withdrawl, .invite, .Service {
+  border: none;
+  color: #3D3D3D;
+  font-size: 0.7em;
+}
 
 .fixedflex {
   display: grid;
@@ -70,7 +76,13 @@ body {
 
 .out{
  text-decoration: none;
+ color: red;
+ font-size: 0.8em;
 } 
+
+marquee {
+  font-size: 0.8em;
+}
 
 .same {
   border: none;
@@ -114,6 +126,7 @@ button{
 
 .p {
   color: red;
+  font-size: 0.8em;
 }
 
 
@@ -121,12 +134,12 @@ button{
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  
+  font-size: 0.6em;
 }
 
 .images {
-  width: 13em;
-  height: 9em;
+  width: 11em;
+  height: 7em;
 }
 
 #btn {
@@ -153,8 +166,9 @@ span {
   grid-template-columns: 1fr 1fr;
   column-gap: 0.3em;
   row-gap: 2em;
-  width: 100%;
+  width: 95%;
   align-items: center;
+  font-size: 0.8em;
 }
 
 .grid3 {
@@ -235,14 +249,18 @@ span {
 
 .grd1 {
   display: grid;
-  grid-template-columns: 6em 6em;
-  height: 7em;
+  grid-template-columns: 1fr 1fr;
+  height: em;
   margin-bottom:2em;
 }
 
+.taskbtn {
+  border: none;
+}
+
 .png {
-  width: 4em;
-  height: 4em;
+  width: 3.5em;
+  height: 3.5em;
   padding-left: -1em;;
 }
 
@@ -252,15 +270,17 @@ span {
   padding-left: 0;
   text-align:  center;
   padding-top: 1.8em;
+  font-size: 0.8em;
 }
 
 .last {
   display: grid;
-  grid-template-columns: 10em 10em;
-  padding: 2em 0 2em 1.4em;
+  grid-template-columns: 1fr 1fr;
+  padding: 0.5em;
   column-gap: 1em;
+  row-gap: 0.5em;
   width: 90%;
-  margin-left: 0.3em;
+  margin: auto;
   border-radius: 0.5em;
 }
 
@@ -268,10 +288,15 @@ span {
   padding-left: 0em;
   padding-top: 1.8em;
   margin-left: 0;
+  height: 1.5em;
 }
 
 a, .company, .rules, .info, .agency {
   padding-left: 0;
   text-decoration: none;
   border: none;
+}
+
+.company {
+  width: auto;
 }

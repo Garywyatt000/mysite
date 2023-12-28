@@ -28,11 +28,13 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   background-color: white;
+  font-size: 0.8em;
+  border: none;
 }
 
 .y {
   color: grey;
-  font-size: 1.2em;
+  font-size: 1em;
   margin-top: -0.3em;
 }
 
@@ -52,6 +54,7 @@ body {
   left: 0;
   right: 0;
   background-color: white;
+  font-size: 0.8em;
 } 
 
 .fixedflex {
@@ -69,7 +72,7 @@ body {
 }
 
 .fa {
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin-left: 0em;
   padding-top: 0.2em;
 }
@@ -101,7 +104,7 @@ body {
 }
 
 .order, .zero {
-  font-size: 1.3em;
+  font-size: 1.em;
   font-weight: 700;
   color: white;
   letter-spacing: 0.5px;
@@ -130,14 +133,15 @@ body {
   padding: 0.1em;
   margin-bottom: 0.3em;
   border-radius: 50%;
+  font-size: 0.6em;
 }
 
 .shopping-cart {
-  font-size: 0.8em;
+  font-size: 0.6em;
 }
 
 .data, .asset {
-  font-size: 0.7em;
+  font-size: 0.4em;
   margin-top: 0.7em;
   color: white;
 }
@@ -159,7 +163,7 @@ body {
 
 .all, .process, .completed, .freezing {
   margin: auto;
-  font-size: 0.9em;
+  font-size: 0.7em;
 }
 
 .no {
@@ -184,7 +188,7 @@ body {
     .productbox {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      row-gap: 0.2em;
+      row-gap: 0.6em;
       column-gap: 0.2em;
       padding: 0;
     }
@@ -211,9 +215,11 @@ body {
       padding: 0;
       color: dimgrey;
       margin: 0;
+      font-size:  0.8em;
     }
 
     .secondp {
+      font-size: 0.8em;
       color: red;
       padding-bottom: 0.5em;
     }
@@ -251,7 +257,7 @@ body {
   top: 0;
   right: 0;
   position: absolute;
-  font-size: 0.8em;
+  font-size: 0.6em;
   display: inline-block;
   color: white;
   margin-left: 1em;
@@ -259,7 +265,7 @@ body {
 }
 
 .fa-shopping-basket {
-  font-size: 0.9em;
+  font-size: 0.7em;
   margin-bottom: em;
   display: inline-block;
 }

@@ -8,7 +8,7 @@ body {
   color: white;
   background-color: red;
   text-align: center;
-  font-size: 0.9em;
+  font-size: 0.8em;
   display: grid;
   grid-template-columns: 3em 1fr;
   color: white;
@@ -32,6 +32,7 @@ body {
 .box {
   margin: 0.5em 0 0 1.5em;
   color: #939497;
+  font-size: 0.8em;
 }
 
 .label {
@@ -40,14 +41,14 @@ body {
 
 input {
   width: 60%;
-  font-size: 1em;
+  font-size: 0.8em;
   border: none;
   outline: none;
 }
 
 #oldpassword::placeholder, #newpassword::placeholder {
   padding-left: 1em;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 #newpassword::placeholder {
@@ -56,7 +57,7 @@ input {
 
 #confirm::placeholder {
   padding-left: 1em;
-  font-size: 0.8em;
+  font-size: 1em;
   width: 65%;
 }
 
@@ -64,14 +65,14 @@ input {
   padding-right: 1.5em;
   padding-left: 1.5em;
   margin-top: 2.3em;
-  font-size: 0.9em;
+  font-size: 0.7em;
   margin-bottom: 3.5em;
 }
 
 .btn {
   color: white;
   height: 2.8em;
-  font-size: 1em;
+  font-size: 0.8em;
   background-color: #15183B;
   border-radius: 0.3em;
   width: 87%;

@@ -45,21 +45,21 @@ const data1 = [
     id: "btn2",
     href: "",
     src: "/Images/eBaycart.jpeg",
-    content: "over &#36;50&#44;000 &#124; 0.3% &#124; 55 product <br> <span> Gold member </span>"
+    content: "over &#36;50&#44;000 &#124; 0.4% &#124; 55 product <br> <span> Gold member </span>"
   },
 
   {
     id: "btn3",
     href: "",
     src: "/Images/Newegg.jpeg",
-    content: "over &#36;80&#44;000 &#124; 0.3% &#124; 65 product <br> <span> Platinum member </span>"
+    content: "over &#36;80&#44;000 &#124; 0.5% &#124; 65 product <br> <span> Platinum member </span>"
   },
 
   {
     id: "btn4",
     href: "",
     src: "/Images/Walmartcart.jpeg",
-    content: "over &#36;500&#44;000 &#124; 0.3% &#124; 85 product <br><span> Diamond member </span>",
+    content: "over &#36;500&#44;000 &#124; 0.6% &#124; 85 product <br><span> Diamond member </span>",
   },
 ];
 
@@ -219,7 +219,7 @@ function displayGridEl(arr) {
 function displayTask(arr) {
   let display = arr.map((item) => {
     return `
-    <button id=${item.id}> <a href=${item.href}>  <img class="images" src=${item.src}>
+    <button class='taskbtn' id=${item.id}> <a href=${item.href}>  <img class="images" src=${item.src}>
       <p class="p">
       ${item.content}
       </p> </a>

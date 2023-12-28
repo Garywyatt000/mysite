@@ -3,6 +3,7 @@ body {
   padding: 0;
   margin: 0;
   height: 100vh;
+  padding-bottom: 2em;
 }
 
 .fixed {
@@ -16,7 +17,12 @@ body {
   left: 0;
   right: 0;
   background-color: white;
+  font-size: 0.8em;
 } 
+
+.amt-input::placeholder {
+  font-size: 0.7em;
+}
 
 .fixedflex {
   display: grid;
@@ -32,7 +38,7 @@ body {
 }
 
 .fa {
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin-left: 0em;
   padding-top: 0.3em;
 }
@@ -48,11 +54,12 @@ body {
   color: white;
   height: 2em;
   padding: 0.5em;
+  font-size: 0.8em;
 }
 
 .recharge {
   margin-top: 0.9em;
-  font-size: 0.95em;
+  font-size: 0.7em;
   margin-bottom: 0;
 }
 
@@ -83,7 +90,7 @@ body {
   display: inline-block;
   width: 90%;
   height: 2em;
-  font-size: 1em;
+  font-size: 0.8em;
   margin: 0.8em 0 0 -0.1em;
   outline: none;
   border: none;
@@ -93,7 +100,7 @@ body {
 
 
 .ri {
-  font-size: 0.9em;
+  font-size: 0.7em;
   color: darkgrey;
   margin-bottom: 0.5em;
 }
@@ -113,6 +120,7 @@ body {
   background-color: white;
   border: solid lightgrey 0.1em;
   margin-bottom: 0.5em;
+  font-size: 0.8em;
 }
 
 .nextdiv {
@@ -124,7 +132,7 @@ body {
   margin: auto;
   margin-left: 1.1em;
   background-color:#444551;
-  font-size: 1em;
+  font-size: 0.8em;
   padding: 0.5em;
   border-radius: 0.2em;
   color: white;
@@ -143,7 +151,7 @@ body {
 
 .payment {
   margin: 0.5em 0 1em 0;
-  font-size: 0.95em;
+  font-size: 0.75em;
   color: black;
 }
 
@@ -159,23 +167,23 @@ body {
 
 .creditcard {
   display: inline-block;
-  font-size: 0.9em;
+  font-size: 0.7em;
   margin-bottom: 0em;
 }
 
 .mastercard {
   color: #5A5B62;
-  font-size: 0.7em;
+  font-size: 0.5em;
   margin-top: -2em;
 }
 
 .consult {
-  font: 1em;
+  font-size: 0.8em;
   margin: 0;
   padding: 0;
 }
 
 .consult2 {
-  font-size: 0.85em;
+  font-size: 0.65em;
   color: #5A5B62;
 }

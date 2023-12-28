@@ -41,7 +41,7 @@ function generateCart() {
         </div>
         <div class="row2">
           <button onclick='decrement(${numid})' class="x y minus"> &ndash; </button>
-          <div id=${numid} class="x z">${item}</div>
+          <div id=${numid} class="x z number">${item}</div>
           <button onclick='increment(${numid},  "${amt}", "${src}",  "${name}", "${numid}" )' class="x y plus"> + </button>
         </div>
         <h3 class="row3">

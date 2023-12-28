@@ -33,7 +33,7 @@ body {
 }
 
 .fa {
-  font-size: 1.8em;
+  font-size: 1.6em;
   margin-left: 0em;
   padding-top: 0em;
   z-index: 999;
@@ -53,6 +53,7 @@ body {
   border: none;
   color: white;
   display: grid;
+  font-size: 0.8em;
 }
 
 .firstbox {
@@ -70,7 +71,7 @@ body {
 
 .id, .commission, .member {
   margin: 0;
-  font-size: 0.8em;
+  font-size: 0.6em;
 }
 
 .commission {
@@ -104,19 +105,19 @@ body {
 
 .price {
   font-weight: 700;
-  font-size: 1.3em;
+  font-size: 1em;
   padding: 0;
   margin: 0.5em ;
 }
 
 .people {
-  font-size: 0.8em;
+  font-size: 0.5em;
   color: grey;
 }
 
 .referral {
   color: #E83737;
-  font-size: 0.8em;
+  font-size: 0.4em;
   padding: auto;
   text-align: center;
 }
@@ -150,6 +151,7 @@ body {
 
 .span {
   margin-top: -2em;
+  font-size: 0.8em;
 }
 
 .grid1 {
@@ -166,11 +168,11 @@ body {
 .amt {
   font-weight: 700;
   margin: 0;
-  font-size: 0.9em;
+  font-size: 0.7em;
 }
 
 .exp {
-  font-size: 0.8em;
+  font-size: 0.4em;
   color: grey;
 }
 
@@ -196,7 +198,7 @@ a {
   background: white;
   padding: 1em;
   text-decoration: none;
-  font-size: 0.8em;
+  font-size: 0.6em;
   color: black;
 }
 
@@ -215,6 +217,6 @@ a {
 
 .text {
   color: black;
-  font-size: 0.9em;
+  font-size: 0.7em;
   margin: 0.1em 0 0 0.8em;
 }

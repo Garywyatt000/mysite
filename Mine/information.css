@@ -10,7 +10,7 @@ body {
   text-align: center;
   display: grid;
   grid-template-columns: 3em 1fr;
-
+  font-size: 0.8em;
 }
 
 .anchor {
@@ -49,6 +49,7 @@ img {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #3B3B3B;
   border: none;
+  font-size: 0.8em;
 }

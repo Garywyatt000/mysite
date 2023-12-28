@@ -2,6 +2,7 @@ body {
   background-image: url("");
   margin: 0;
   padding: 0;
+  padding-bottom: 2em;
 }
 
 .header {
@@ -12,6 +13,7 @@ body {
   display: grid;
   grid-template-columns: 3em 1fr;
   color: white;
+  font-size: 0.8em;
 }
 
 .anchor {
@@ -24,7 +26,7 @@ body {
 }
 
 .arrive, .transfer {
-  font-size: 0.8em;
+  font-size: 0.7em;
   color: #434344;
 }
 
@@ -45,19 +47,19 @@ body {
 
 .recharge {
   font-weight: 700;
-  font-size: 0.8em;
+  font-size: 0.6em;
   margin-left: 1em;
   padding-left: 0;
 }
 
 .wallet {
-  font-size: 0.85em;
+  font-size: 0.75em;
   font-weight: 500;
 }
 
 .contact {
   
-  font-size: 0.8em;
+  font-size: 0.6em;
   margin: auto;
 }
 
@@ -74,10 +76,11 @@ a {
 
 .pic {
   margin: auto;
-  height: 12em;
-  width: 24em;
+  height: 10em;
+  width: 80%;
   background-color: lightgrey;
   color: white;
+  border: none;
 }
 
 .click {
@@ -88,12 +91,13 @@ a {
 .upload {
   color: #434344;
   font-size: 0.7em;
-  margin-left: 6em;
+  margin: auto;
+  width: 70%;
 }
 
 .notice {
   padding: 3em 0.5em 3em 0.5em;
-  font-size: 0.8em;
+  font-size: 0.6em;
   color: #434344;
 }
 
@@ -103,13 +107,13 @@ a {
   padding: 0.7em;
   width: 95%;
   margin-left: 0.7em;
-  font-size: 0.8em;
+  font-size: 0.7em;
   border-radius: 0.3em;
 }
 
 .tips {
   margin-top: 1.5em;
   color: #434344;
-  font-size: 0.8em;
+  font-size: 0.7em;
   padding: 0.5em;
 }
